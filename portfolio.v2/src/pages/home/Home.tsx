@@ -1,6 +1,8 @@
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
+import '../navbar/Nav';
+import Nav from "../navbar/Nav";
 // import { lazy, Suspense } from 'react';
 
 const Home = () => {
@@ -73,6 +75,7 @@ const Home = () => {
           />
         </div>
       </div>
+      <Nav />
     </div>
   );
 };
