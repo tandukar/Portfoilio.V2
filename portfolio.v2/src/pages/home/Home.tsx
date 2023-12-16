@@ -9,7 +9,7 @@ const Home = () => {
   // const LazyLoadedImage = lazy(() => import('wired-flat-18-location-pin-red.gif'));
 
   return (
-    <div className="min-h-screen  flex items-center justify-center">
+    <div className="min-h-screen  flex items-center justify-center ">
       <div className="grid md:grid-cols-2  mx-auto  gap-40  items-center">
         <div className="grid grid-rows-3 w-60">
           <div className="text-neutral-300  md:ml-0 md:w-96 ">
