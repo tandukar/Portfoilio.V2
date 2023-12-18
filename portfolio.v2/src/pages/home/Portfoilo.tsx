@@ -4,20 +4,15 @@ import "../navbar/Nav";
 import Nav from "../navbar/Nav";
 import "./SocialIcons";
 import SocialIcons from "./SocialIcons";
-// import { lazy, Suspense } from 'react';
 
-const Home = () => {
+const Portfoilo = () => {
   return (
-    
     <div className="min-h-screen  flex items-center justify-center  ">
       <div className="grid md:grid-cols-2  mx-auto  gap-40  items-center">
-        <div className="grid grid-rows-3 w-96">
+        <div className="grid grid-rows-3 w-60">
           <div className="text-neutral-300  md:ml-0 md:w-96 ">
             <h1 className="text-5xl  text-neutral-800 font-poppins">
               Fullstack Mern Developer.
-              {/* <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 mt-2 block">
-                Fullstack Developer.
-              </span> */}
             </h1>
           </div>
           <div className="text-slate-600 md:text-justify mt-3 font-sans text-center">
@@ -31,12 +26,6 @@ const Home = () => {
                 className=" inline-block h-7 w-7 align-bottom"
               />
             </p>
-
-            {/* I'm an enthusiastic web developer
-            with a deep passion for technology and a particular interest in MERN
-            stack development. With a background in computer science, I approach
-            web development with a blend of precision and creativity, aiming to
-            make a positive impact through my work. */}
           </div>
 
           <div className="grid grid-cols-3 w-36 py-2 ">
@@ -56,10 +45,10 @@ const Home = () => {
         </div>
 
         <div>
-          <img
+          {/* <img
             src={"catGif.gif"}
             alt="Location Pin GIF"
-          />
+          /> */}
         </div>
       </div>
       <Nav />
@@ -67,4 +56,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Portfoilo;
