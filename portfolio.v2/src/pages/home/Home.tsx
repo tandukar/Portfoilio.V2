@@ -8,7 +8,6 @@ import SocialIcons from "./SocialIcons";
 
 const Home = () => {
   return (
-    
     <div className="min-h-screen  flex items-center justify-center  ">
       <div className="grid md:grid-cols-2  mx-auto  gap-40  items-center">
         <div className="grid grid-rows-3 w-96">
@@ -56,13 +55,15 @@ const Home = () => {
         </div>
 
         <div>
-          <img
-            src={"catGif.gif"}
-            alt="Location Pin GIF"
-          />
+          <img src={"catGif.gif"} alt="Location Pin GIF" />
         </div>
       </div>
       <Nav />
+      <div className="absolute left-[-50px] bottom-28 transform -rotate-90">
+        <div className="text-lg text-slate-600 font-semibold">
+          2023 <span className="text-amber-400 tracking-widest ">Pragyo Tandukar.</span>
+        </div>
+      </div>
     </div>
   );
 };

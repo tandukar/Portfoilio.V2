@@ -14,7 +14,7 @@ const Nav = () => {
           </a>
         </div>
         <div className="hover:bg-slate-200  transition duration-700 ease-in-out rounded-3xl h-11 w-11 flex items-center text-white justify-center hover:text-black">
-          <a href="#" className="">
+          <a href="/#/projects" className="">
             <FiShoppingBag className="h-5 w-5" />
           </a>
         </div>

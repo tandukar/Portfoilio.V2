@@ -5,9 +5,11 @@ import {
   Navigate,
 } from "react-router-dom";
 
-import "./App.css";
+// import "./App.css";
 import Home from "./pages/home/Home";
-import Portfoilo from "./pages/home/Portfoilo";
+// import Portfoilo from "./pages/home/Portfoilo";
+// import Projects from "./pages/projects/Projects";/
+import Projects2 from "./pages/projects/Projects2";
 
 function App() {
   return (
@@ -15,7 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Navigate to="/home" />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/portfoilo" element={<Portfoilo />} />
+        <Route path="/projects" element={<Projects2 />} />
       </Routes>
     </Router>
   );
