@@ -59,11 +59,11 @@ const Home = () => {
         </div>
       </div>
       <Nav />
-      <div className="absolute left-[-50px] bottom-28 transform -rotate-90">
+      {/* <div className="absolute left-[-80px] bottom-28 transform -rotate-90">
         <div className="text-lg text-slate-600 font-semibold">
           2023 <span className="text-amber-400 tracking-widest ">Pragyo Tandukar.</span>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
