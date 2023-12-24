@@ -23,7 +23,7 @@ const Nav = () => {
   const navItems = [
     { icon: GoHome, href: "#", label: "Home" },
     { icon: FiShoppingBag, href: "/#/projects", label: "Projects" },
-    { icon: FiMail, href: "#", label: "Mail" },
+    { icon: FiMail, href: "/#/prev_projects", label: "Mail" },
     { icon: FiMoon, href: "#", label: "Moon" },
   ];
 

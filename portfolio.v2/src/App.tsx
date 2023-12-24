@@ -8,7 +8,7 @@ import {
 // import "./App.css";
 import Home from "./pages/home/Home";
 // import Portfoilo from "./pages/home/Portfoilo";
-// import Projects from "./pages/projects/Projects";/
+import Projects from "./pages/projects/Projects";
 import Projects2 from "./pages/projects/Projects2";
 
 function App() {
@@ -17,6 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Navigate to="/home" />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/prev_projects" element={<Projects />} />
         <Route path="/projects" element={<Projects2 />} />
       </Routes>
     </Router>
