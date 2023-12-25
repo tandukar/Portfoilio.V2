@@ -1,12 +1,12 @@
 import Home from "../home/Home";
-import Projects2 from "../projects/Projects2";
+import Projects from "../projects/Projects";
 
 const Portfolio = () => {
   return (
-    <div>
+    <>
       <Home />
-      <Projects2 />
-    </div>
+      <Projects />
+    </>
   );
 };
 export default Portfolio;
