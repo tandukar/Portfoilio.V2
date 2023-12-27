@@ -64,7 +64,7 @@ const ProjectsItems: React.FC<ProjectsItemsProps & { index: number }> = ({
 const Projects = () => {
   const projectItems = [
     {
-      href: "/#/projects",
+      href: "https://github.com/tandukar/PatientManagementSystem",
       title: "Patient Management System",
       description:
         "The Patient Management System is a comprehensive solution designed to streamline healthcare operations, providing efficient patient care by seamlessly managing appointment, doctors and patients in a user-friendly platform.",
@@ -76,7 +76,7 @@ const Projects = () => {
         "Tour Management System: Discover, select, and effortlessly purchase curated tour packages for a seamless travel experience.",
     },
     {
-      href: "/#/projects",
+      href: "https://github.com/tandukar/tracka",
       title: "tracka",
       description:
         "Your go-to mobile app for streamlined task management. Organize, prioritize, and track tasks effortlessly with its intuitive interface, enhancing productivity on the go.",
