@@ -16,6 +16,7 @@
 // };
 
 // export default Projects;
+import { FaGithub } from "react-icons/fa";
 
 type ProjectsItemsProps = {
   href: string;
@@ -35,7 +36,7 @@ const ProjectsItems: React.FC<ProjectsItemsProps & { index: number }> = ({
   const isImageOnLeft = isOdd;
 
   return (
-    <a href={href}>
+    <a href="">
       <div
         className={`h-custom grid grid-cols-3 bg-white shadow-md rounded-3xl overflow-hidden`}
       >
@@ -54,7 +55,17 @@ const ProjectsItems: React.FC<ProjectsItemsProps & { index: number }> = ({
           <h2 className="font-bold text-slate-900 my-10">{title}</h2>
           <p>{description}</p>
 
-          <a  href=""> View Code</a>
+          <a
+            href={href}
+            className="text-brown-800 hover:text-amber-400  font-semibold py-2 inline-flex items-center "
+          >
+            <span
+              className="m-2 "
+            >
+              Code
+            </span>
+            <FaGithub />
+          </a>
         </div>
       </div>
     </a>
