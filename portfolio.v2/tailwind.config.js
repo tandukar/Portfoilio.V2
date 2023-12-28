@@ -7,10 +7,18 @@ export default {
     theme: {
         extend: {
             width: {
-                'custom': '120px', // Adjust the value as needed
+                'custom': '1000px', // Adjust the value as needed
             },
             height: {
                 'custom': '400px', // Adjust the value as needed
+            },
+            textColor: {
+                'custom-beige1': '#dace90',
+                'custom-beige2': '#dace62',
+            },
+            backgroundColor: {
+                'custom-beige1': '#dace90',
+                'custom-beige2': '#dace62',
             },
         },
     },
