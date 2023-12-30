@@ -59,7 +59,7 @@ const ProjectsItems: React.FC<ProjectsItemsProps & { index: number }> = ({
     //   </div>
     // </div>
 
-    <div>
+    <div >
       <div className="w-full h-custom grid grid-cols-5  relative ">
         <div className="z-50 right-0  text-slate-600 absolute top-60 transform -translate-y-1/2">
           <div className="w-custom1 text-white  bg-teal-800 h-36">
@@ -82,8 +82,8 @@ const ProjectsItems: React.FC<ProjectsItemsProps & { index: number }> = ({
           </ul>
         </div>
         <img
-          className="object-cover col-span-3 w-full h-full bg-slate-900"
-          src=""
+          className="object-cover col-span-3 w-full h-custom max-h-custom bg-slate-900"
+          src={img}
           alt=""
         />
         <div className="w-full h-full col-span-2 grid-rows-4 py-6 gap-2  ">
@@ -102,14 +102,14 @@ const Projects = () => {
   const projectItems = [
     {
       href: "https://github.com/tandukar/PatientManagementSystem",
-      img: "/hospital-CRM.jpg",
+      img: "https://mir-s3-cdn-cf.behance.net/projects/404/0f4e8b185475539.Y3JvcCwxMzI2LDEwMzcsMCw2MjA.png",
       title: "Patient Management System",
       description:
         "A comprehensive solution designed to streamline healthcare operations, providing efficient patient care by seamlessly managing appointment, doctors and patients in a user-friendly platform.",
     },
     {
       href: "https://github.com/tandukar/Tour",
-      img: "/travel.jpg",
+      img: "https://i.ytimg.com/vi/J-EFD3hyDFQ/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB7lcRAD87MQKPFVlkNvVd-CSheWA",
       title: "Tour Management System",
       description:
         "Tour Management System: Discover, select, and effortlessly purchase curated tour packages for a seamless travel experience.",
