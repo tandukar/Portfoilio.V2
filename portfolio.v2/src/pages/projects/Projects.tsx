@@ -1,35 +1,20 @@
-// const Projects = () => {
-//   return (
-//     <div className="flex items-center justify-center h-screen">
-//       <div className="grid grid-cols-3 h-3/4 w-3/5 gap-1">
-//         <div className="h-full bg-red-600"></div>
-//         <div className="h-full w-full grid grid-rows-2 col-span-2  gap-1">
-//           <div className="h-full grid grid-cols-2 gap-1">
-//             <div className="h-full bg-red-600"></div>
-//             <div className="h-full bg-red-600"></div>
-//           </div>
-//           <div className="h-full bg-red-600"></div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
 
-// export default Projects;
 import { FaGithub } from "react-icons/fa";
 
 type ProjectsItemsProps = {
   href: string;
   title: string;
   img: string;
+  tech: Array<string>;
   description: string;
 };
 
-const ProjectsItems: React.FC<ProjectsItemsProps & { index: number }> = ({
+const ProjectsItems: React.FC<ProjectsItemsProps & { index: number,  tech: Array<string> }> = ({
   href,
   title,
   img,
   description,
+  tech,
   index,
 }) => {
   console.log("Index:", index);
@@ -59,7 +44,7 @@ const ProjectsItems: React.FC<ProjectsItemsProps & { index: number }> = ({
     //   </div>
     // </div>
 
-    <div >
+    <div>
       <div className="w-full h-custom grid grid-cols-5  relative ">
         <div className="z-50 right-0  text-slate-600 absolute top-60 transform -translate-y-1/2">
           <div className="w-custom1 text-white  bg-teal-800 h-36">
@@ -69,11 +54,12 @@ const ProjectsItems: React.FC<ProjectsItemsProps & { index: number }> = ({
               euismod nulla erat vel orci.
             </p>
           </div>
-          <ul className="text-right font-semibold text-lg mt-4">
-            <li className="inline-block mr-4">React</li>
-            <li className="inline-block mr-4">Node</li>
-            <li className="inline-block mr-4">Express</li>
-            <li className="inline-block">MongoDB</li>
+          <ul className="text-right font-semibold text-md mt-4">
+            {tech &&  tech.map((techItem, index) => (
+              <li key={index} className="inline-block mr-4">
+                {techItem}
+              </li>
+            ))}
           </ul>
           <ul className="text-right text-2xl font-semibold  mt-4">
             <li className="inline-block mr-4">
@@ -91,7 +77,9 @@ const ProjectsItems: React.FC<ProjectsItemsProps & { index: number }> = ({
             Featured Project
           </div>
 
-          <div className="text-right text-3xl font-bold text-slate-700">Project Name</div>
+          <div className="text-right text-3xl font-bold text-slate-700">
+            Project Name
+          </div>
         </div>
       </div>
     </div>
@@ -104,6 +92,7 @@ const Projects = () => {
       href: "https://github.com/tandukar/PatientManagementSystem",
       img: "https://mir-s3-cdn-cf.behance.net/projects/404/0f4e8b185475539.Y3JvcCwxMzI2LDEwMzcsMCw2MjA.png",
       title: "Patient Management System",
+      tech: ["React", "Node", "MongoDB", "Express", "Redux Toolkit", "Tailwind CSS"],
       description:
         "A comprehensive solution designed to streamline healthcare operations, providing efficient patient care by seamlessly managing appointment, doctors and patients in a user-friendly platform.",
     },
@@ -111,12 +100,16 @@ const Projects = () => {
       href: "https://github.com/tandukar/Tour",
       img: "https://i.ytimg.com/vi/J-EFD3hyDFQ/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB7lcRAD87MQKPFVlkNvVd-CSheWA",
       title: "Tour Management System",
+      tech: ["Python", "Django", "HTML", "CSS", "Bootstrap"],
+
       description:
         "Tour Management System: Discover, select, and effortlessly purchase curated tour packages for a seamless travel experience.",
     },
     {
       href: "https://github.com/tandukar/tracka",
       title: "tracka",
+      tech: ["NodeJs", "Express", "MongoDB", "Flutter"],
+
       description:
         "Your go-to mobile app for streamlined task management. Organize, prioritize, and track tasks effortlessly with its intuitive interface, enhancing productivity on the go.",
     },
