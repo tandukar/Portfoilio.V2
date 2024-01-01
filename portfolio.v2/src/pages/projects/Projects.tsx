@@ -40,7 +40,11 @@ const ProjectsItems: React.FC<
 
     <div>
       <div className="w-full h-custom grid grid-cols-5  relative  ">
-        <div className="z-50 right-0  text-slate-600 absolute top-60 transform -translate-y-1/2">
+        <div
+          className={`z-50  ${
+            isImageOnLeft ? "col-span-3 order-1  left-0 " : "col-span-3 right-0"
+          }  text-slate-600 absolute top-60 transform -translate-y-1/2`}
+        >
           <div className="w-custom1 text-white  bg-teal-800 h-36 rounded-md shadow-md">
             <p className=" text-lg p-5 w-full">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
@@ -48,15 +52,27 @@ const ProjectsItems: React.FC<
               euismod nulla erat vel orci.
             </p>
           </div>
-          <ul className="text-right font-semibold text-md mt-4">
+          <ul
+            className={` ${
+              isImageOnLeft
+                ? "col-span-3 order-1  text-left "
+                : "col-span-3 text-right"
+            } font-semibold text-md mt-4`}
+          >
             {tech &&
               tech.map((techItem, index) => (
-                <li key={index} className="inline-block ml-3">
+                <li key={index} className="inline-block ">
                   {techItem}
                 </li>
               ))}
           </ul>
-          <ul className="text-right text-2xl font-semibold  mt-4">
+          <ul
+            className={`${
+              isImageOnLeft
+                ? "col-span-3 order-1  text-left "
+                : "col-span-3 text-right"
+            } text-2xl font-semibold  mt-4`}
+          >
             <li className="inline-block ">
               <FaGithub />
             </li>
@@ -80,7 +96,8 @@ const ProjectsItems: React.FC<
             Featured Project
           </div>
 
-          <div className={` ${
+          <div
+            className={` ${
               isImageOnLeft
                 ? "col-span-3 order-1 text-left"
                 : "col-span-3 text-right "
