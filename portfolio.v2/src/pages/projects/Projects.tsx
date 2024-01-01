@@ -1,4 +1,3 @@
-
 import { FaGithub } from "react-icons/fa";
 
 type ProjectsItemsProps = {
@@ -9,14 +8,9 @@ type ProjectsItemsProps = {
   description: string;
 };
 
-const ProjectsItems: React.FC<ProjectsItemsProps & { index: number,  tech: Array<string> }> = ({
-  href,
-  title,
-  img,
-  description,
-  tech,
-  index,
-}) => {
+const ProjectsItems: React.FC<
+  ProjectsItemsProps & { index: number; tech: Array<string> }
+> = ({ href, title, img, description, tech, index }) => {
   console.log("Index:", index);
 
   const isOdd = index % 2 !== 0;
@@ -55,11 +49,12 @@ const ProjectsItems: React.FC<ProjectsItemsProps & { index: number,  tech: Array
             </p>
           </div>
           <ul className="text-right font-semibold text-md mt-4">
-            {tech &&  tech.map((techItem, index) => (
-              <li key={index} className="inline-block ml-3">
-                {techItem}
-              </li>
-            ))}
+            {tech &&
+              tech.map((techItem, index) => (
+                <li key={index} className="inline-block ml-3">
+                  {techItem}
+                </li>
+              ))}
           </ul>
           <ul className="text-right text-2xl font-semibold  mt-4">
             <li className="inline-block ">
@@ -68,16 +63,29 @@ const ProjectsItems: React.FC<ProjectsItemsProps & { index: number,  tech: Array
           </ul>
         </div>
         <img
-          className="object-cover col-span-3 w-full h-custom max-h-custom bg-slate-900 rounded-md"
+          className={`object-cover ${
+            isImageOnLeft ? "col-span-3 order-1" : "col-span-3 "
+          }  w-full h-custom max-h-custom bg-slate-900 rounded-md`}
           src={img}
           alt=""
         />
         <div className="w-full h-full col-span-2 grid-rows-4 py-6 gap-2   ">
-          <div className="text-right text-lg font-medium text-emerald-500">
+          <div
+            className={` ${
+              isImageOnLeft
+                ? "col-span-3 order-1 text-left"
+                : "col-span-3 text-right "
+            }   text-lg font-medium text-emerald-500`}
+          >
             Featured Project
           </div>
 
-          <div className="text-right text-3xl font-bold text-slate-700">
+          <div className={` ${
+              isImageOnLeft
+                ? "col-span-3 order-1 text-left"
+                : "col-span-3 text-right "
+            }   text-3xl font-bold text-slate-700`}
+          >
             Project Name
           </div>
         </div>
@@ -92,7 +100,14 @@ const Projects = () => {
       href: "https://github.com/tandukar/PatientManagementSystem",
       img: "https://mir-s3-cdn-cf.behance.net/projects/404/0f4e8b185475539.Y3JvcCwxMzI2LDEwMzcsMCw2MjA.png",
       title: "Patient Management System",
-      tech: ["React", "Node", "MongoDB", "Express", "Redux Toolkit", "Tailwind CSS"],
+      tech: [
+        "React",
+        "Node",
+        "MongoDB",
+        "Express",
+        "Redux Toolkit",
+        "Tailwind CSS",
+      ],
       description:
         "A comprehensive solution designed to streamline healthcare operations, providing efficient patient care by seamlessly managing appointment, doctors and patients in a user-friendly platform.",
     },
