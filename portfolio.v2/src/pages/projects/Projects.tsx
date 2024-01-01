@@ -16,28 +16,7 @@ const ProjectsItems: React.FC<
   const isOdd = index % 2 !== 0;
   const isImageOnLeft = isOdd;
 
-  //TODO:    build this section like this https://v4.brittanychiang.com
-
   return (
-    // <div className={`h-custom grid grid-cols-2 gap-5 bg-white shadow-md rounded-3xl overflow-hidden`}>
-    //   <div className={`h-full ${isImageOnLeft ? "col-span-1 order-2" : "col-span-1 order-last"} rounded-3xl p-5`}>
-    //     <img className="object-cover w-full h-full rounded-3xl" src={img} alt=""/>
-    //   </div>
-    //   <div  className={`h-full ${isImageOnLeft ? " order-last" : " order-1"} py-5 px-3 flex flex-col justify-center`} >
-    //     <h2 className="text-xl font-bold text-slate-700 mt-10 text-center">
-    //       {title}
-    //     </h2>
-    //     <p className="text-center font-semibold text-slate-500 my-9">
-    //       {description}
-    //     </p>
-
-    //     <a href={href} className="text-slate-600 hover:text-custom-beige2 hover:bg-custom text-lg font-bold py-2 flex items-center justify-center transition-all duration-300 rounded-3xl">
-    //       <span className="m-2">Code</span>
-    //       <FaGithub />
-    //     </a>
-    //   </div>
-    // </div>
-
     <div>
       <div className="w-full h-custom grid grid-cols-5  relative  ">
         <div
@@ -57,7 +36,7 @@ const ProjectsItems: React.FC<
               isImageOnLeft
                 ? "col-span-3 order-1  text-left "
                 : "col-span-3 text-right"
-            } font-semibold text-md mt-4`}
+            } font-semibold text-md mt-4 space-x-2 `}
           >
             {tech &&
               tech.map((techItem, index) => (
@@ -158,7 +137,7 @@ const Projects = () => {
         </h2>
 
         <div className="flex items-center justify-center">
-          <div className="grid grid-rows w-custom gap-16">
+          <div className="grid grid-rows w-custom gap-24">
             {projectItems.map((item, index) => (
               <ProjectsItems
                 key={index}

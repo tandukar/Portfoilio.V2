@@ -8,7 +8,7 @@ export default {
         extend: {
             width: {
                 'custom': '1000px', // Adjust the value as needed
-                'custom1': '550px', // Adjust the value as needed
+                'custom1': '530px', // Adjust the value as needed
             },
             height: {
                 'custom': '400px', // Adjust the value as needed
