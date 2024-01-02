@@ -1,4 +1,5 @@
 import { FaGithub } from "react-icons/fa";
+import Connect from "../connect/Connect";
 
 type ProjectsItemsProps = {
   href: string;
@@ -127,7 +128,7 @@ const Projects = () => {
   ];
   return (
     //might need to change this to slate 50
-    <div className="py-16 flex  justify-center">
+    <div className="py-16 flex  justify-center ">
       <div className="h-screen w-custom  ">
         <h2 className=" flex items-center text-3xl font-bold text-slate-700 mb-8">
           <span className="text-custom-beige2 mr-2 font-semibold text-2xl align-middle ">
@@ -136,8 +137,8 @@ const Projects = () => {
           Some Things I've Built
         </h2>
 
-        <div className="flex items-center justify-center">
-          <div className="grid grid-rows w-custom gap-24">
+        <div className="flex items-center justify-center ">
+          <div className="grid grid-rows w-custom gap-24 ">
             {projectItems.map((item, index) => (
               <ProjectsItems
                 key={index}
@@ -148,6 +149,10 @@ const Projects = () => {
             ))}
           </div>
         </div>
+        <div className="flex items-center justify-center ">
+          <Connect/>
+
+      </div>
       </div>
     </div>
   );

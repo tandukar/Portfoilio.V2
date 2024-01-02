@@ -7,11 +7,13 @@ export default {
     theme: {
         extend: {
             width: {
-                'custom': '1000px', // Adjust the value as needed
-                'custom1': '530px', // Adjust the value as needed
+                'custom': '1000px',
+                'custom1': '530px',
+                'custom2': '1500px',
             },
             height: {
-                'custom': '400px', // Adjust the value as needed
+                'custom': '400px',
+                'custom1': '700px',
             },
             textColor: {
                 'custom-beige1': '#dace90',
