@@ -9,7 +9,7 @@ export default {
             width: {
                 'custom': '1000px',
                 'custom1': '530px',
-                'custom2': '1500px',
+                'custom2': '460px',
             },
             height: {
                 'custom': '400px',
