@@ -11,17 +11,13 @@ const Connect = () => {
             Feel free to reach out if you have any questions, ideas, or just
             want to say hello! I'm looking forward to hearing from you.
           </p>
-          <button className=" hover:bg-teal-600 border-2 mt-7 rounded-md hover:text-white border-teal-600 active:bg-teal-600 p-3 w-36">
+          <button className="hover:bg-teal-600 border-2 mt-7 rounded-md hover:text-white border-teal-600 active:bg-teal-600 p-3 w-36">
             Say Hello
           </button>
         </div>
 
-        <div className="mt-28  w-full row-span-1 flex flex-col justify-center items-center text-center text-sm font-bold text-slate-700">
-          <p className="mb-5">Designed and Built By Pragyo Tandukar</p>
-
-          <div className="">
-            <p>&copy; 2024 Pragyo Tandukar. All rights reserved.</p>
-          </div>
+        <div className="mt-auto w-full row-span-1 flex flex-col justify-center items-center text-center text-sm font-bold text-slate-700 p-6">
+          <p>Copyright &copy; 2024. All rights are reserved.</p>
         </div>
       </div>
     </div>

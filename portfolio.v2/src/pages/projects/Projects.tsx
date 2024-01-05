@@ -128,8 +128,9 @@ const Projects = () => {
   ];
   return (
     //might need to change this to slate 50
-    <div className="py-16 flex  justify-center ">
-      <div className="h-screen w-custom  ">
+    // <div className="py-16 flex  justify-center bg-custom-navy">
+    <div className="py-16 flex  justify-center">
+      <div className=" w-custom  ">
         <h2 className=" flex items-center text-3xl font-bold text-slate-700 mb-8">
           <span className="text-custom-beige2 mr-2 font-semibold text-2xl align-middle ">
             01 <span className="text-3xl text-bold">.</span>
@@ -149,10 +150,6 @@ const Projects = () => {
             ))}
           </div>
         </div>
-        <div className="flex items-center justify-center ">
-          <Connect/>
-
-      </div>
       </div>
     </div>
   );

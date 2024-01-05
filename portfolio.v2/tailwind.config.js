@@ -22,6 +22,7 @@ export default {
             backgroundColor: {
                 'custom-beige1': '#dace90',
                 'custom-beige2': '#dace62',
+                'custom-navy': '#0a192f',
             },
         },
     },
