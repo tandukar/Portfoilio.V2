@@ -58,20 +58,20 @@ const ProjectsItems: React.FC<
             </li>
           </ul>
         </div>
-        <div className="relative group cursor-pointer">
+        <div
+          className={`object-cover ${
+            isImageOnLeft ? "col-span-3 order-1" : "col-span-3"
+          } relative group cursor-pointer`}
+        >
           <div className="relative rounded-md overflow-hidden">
-            <div className="absolute inset-0 bg-red-500 opacity-50 transition-opacity duration-300 group-hover:opacity-0"></div>
+            <div className="absolute inset-0 bg-custom-beige2 opacity-50 transition-opacity duration-300 group-hover:opacity-0"></div>
             <img
-              className={`object-cover ${
-                isImageOnLeft ? "col-span-3 order-1" : "col-span-3"
-              } w-full h-custom max-h-custom transition-opacity duration-300 group-hover:opacity-100`}
+              className={`object-cover w-full h-custom max-h-custom bg-slate-900 rounded-md transition-opacity duration-300 group-hover:opacity-100`}
               src={img}
               alt=""
             />
           </div>
         </div>
-
-        
         {/* <img
           className={`object-cover ${
             isImageOnLeft ? "col-span-3 order-1" : "col-span-3 "
@@ -79,8 +79,6 @@ const ProjectsItems: React.FC<
           src={img}
           alt=""
         /> */}
-
-
 
         <div className="w-full h-full col-span-2 grid-rows-4 py-6 gap-2   ">
           <div
@@ -114,11 +112,7 @@ const Projects = () => {
       href: "https://github.com/tandukar/PatientManagementSystem",
       img: "https://mir-s3-cdn-cf.behance.net/projects/404/0f4e8b185475539.Y3JvcCwxMzI2LDEwMzcsMCw2MjA.png",
       title: "Patient Management System",
-      tech: [
-        "MERN",
-        "Redux Toolkit",
-        "Tailwind CSS",
-      ],
+      tech: ["MERN", "Redux Toolkit", "Tailwind CSS"],
       description:
         "A comprehensive solution designed to streamline healthcare operations, providing efficient patient care by seamlessly managing appointment, doctors and patients in a user-friendly platform.",
     },
