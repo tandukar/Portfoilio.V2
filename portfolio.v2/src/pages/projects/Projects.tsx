@@ -26,11 +26,7 @@ const ProjectsItems: React.FC<
           }  text-slate-600 absolute top-60 transform -translate-y-1/2`}
         >
           <div className="w-custom1 text-white  bg-teal-800 h-36 rounded-md shadow-md">
-            <p className=" text-lg p-5 w-full">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-              ultrices, quam eget cursus congue, sem nisi vestibulum elit, a
-              euismod nulla erat vel orci.
-            </p>
+            <p className=" text-lg p-5 w-full">{description}</p>
           </div>
           <ul
             className={` ${
@@ -54,7 +50,9 @@ const ProjectsItems: React.FC<
             } text-2xl font-semibold  mt-4`}
           >
             <li className="inline-block ">
-              <FaGithub />
+              <a href={href} target="_blank" rel="noopener noreferrer">
+                <FaGithub />
+              </a>
             </li>
           </ul>
         </div>
@@ -64,7 +62,7 @@ const ProjectsItems: React.FC<
           } relative group cursor-pointer`}
         >
           <div className="relative rounded-md overflow-hidden">
-            <div className="absolute inset-0 bg-custom-beige2 opacity-50 transition-opacity duration-300 group-hover:opacity-0"></div>
+            <div className="absolute inset-0 bg-slate-600 opacity-50 transition-opacity duration-300 group-hover:opacity-0"></div>
             <img
               className={`object-cover w-full h-custom max-h-custom bg-slate-900 rounded-md transition-opacity duration-300 group-hover:opacity-100`}
               src={img}
@@ -98,7 +96,7 @@ const ProjectsItems: React.FC<
                 : "col-span-3 text-right "
             }   text-3xl font-bold text-slate-700`}
           >
-            Project Name
+            {title}
           </div>
         </div>
       </div>
@@ -124,14 +122,6 @@ const Projects = () => {
 
       description:
         "Tour Management System: Discover, select, and effortlessly purchase curated tour packages for a seamless travel experience.",
-    },
-    {
-      href: "https://github.com/tandukar/tracka",
-      title: "tracka",
-      tech: ["NodeJs", "Express", "MongoDB", "Flutter"],
-
-      description:
-        "Your go-to mobile app for streamlined task management. Organize, prioritize, and track tasks effortlessly with its intuitive interface, enhancing productivity on the go.",
     },
   ];
   return (
