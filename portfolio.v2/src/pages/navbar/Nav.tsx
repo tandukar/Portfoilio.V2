@@ -22,8 +22,8 @@ const NavItem: React.FC<NavItemProps> = ({ icon, href, label }) => {
 const Nav = () => {
   const navItems = [
     { icon: GoHome, href: "#", label: "Home" },
-    { icon: FiShoppingBag, href: "/#/projects", label: "Projects" },
-    { icon: FiMail, href: "/#/prev_projects", label: "Mail" },
+    { icon: FiShoppingBag, href: "#", label: "Projects" },
+    { icon: FiMail, href: "mailto:tandukarpragyo123@gmail.com", label: "Mail" },
     { icon: FiMoon, href: "#", label: "Moon" },
   ];
 

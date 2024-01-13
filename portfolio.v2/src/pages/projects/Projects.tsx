@@ -62,7 +62,7 @@ const ProjectsItems: React.FC<
           } relative group cursor-pointer`}
         >
           <div className="relative rounded-md overflow-hidden">
-            <div className="absolute inset-0 bg-slate-600 opacity-50 transition-opacity duration-300 group-hover:opacity-0"></div>
+            <div className="absolute inset-0 bg-custom-beige1 opacity-50 transition-opacity duration-300 group-hover:opacity-0"></div>
             <img
               className={`object-cover w-full h-custom max-h-custom bg-slate-900 rounded-md transition-opacity duration-300 group-hover:opacity-100`}
               src={img}
