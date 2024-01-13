@@ -1,5 +1,4 @@
 import { FaGithub } from "react-icons/fa";
-import Connect from "../connect/Connect";
 
 type ProjectsItemsProps = {
   href: string;

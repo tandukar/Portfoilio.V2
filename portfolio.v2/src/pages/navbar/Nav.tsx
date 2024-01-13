@@ -7,7 +7,7 @@ type NavItemProps = {
   label: string;
 }
 
-const NavItem: React.FC<NavItemProps> = ({ icon, href, label }) => {
+const NavItem: React.FC<NavItemProps> = ({ icon, href }) => {
   const IconComponent = icon;
   
   return (
