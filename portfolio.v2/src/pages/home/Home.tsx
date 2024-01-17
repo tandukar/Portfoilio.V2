@@ -12,11 +12,11 @@ const Home = () => {
       <div className="grid md:grid-cols-2  mx-auto  gap-40  items-center">
         <div className="grid grid-rows-3 w-96">
           <div className="text-neutral-300  md:ml-0 md:w-96 ">
-            <h1 className="text-5xl  text-neutral-800 font-poppins">
-              Fullstack Mern Developer.
+            <h1 className="md:text-5xl text-4xl md:text-left  text-center text-neutral-800 font-poppins">
+              Fullstack Web Developer.
             </h1>
           </div>
-          <div className="text-slate-600 md:text-justify mt-3 font-sans text-center">
+          <div className="text-slate-600 md:text-justify md:mt-3 mt-4 font-sans text-center md:px-0 px-2">
             <p>
               Hey there! I'm Pragyo Tandukar. A dedicated and enthusiastic
               fullstack web developer hailing from the beautiful city of
@@ -24,7 +24,7 @@ const Home = () => {
               <img
                 src={"wired-flat-18-location-pin-red.gif"}
                 alt="Location Pin GIF"
-                className=" inline-block h-7 w-7 align-bottom"
+                className=" inline-block h-6 w-6 align-bottom"
               />
             </p>
           </div>
