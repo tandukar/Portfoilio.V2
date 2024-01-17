@@ -1,7 +1,7 @@
 const Connect = () => {
   return (
-    <div className="h-custom1 w-full mt-16 ">
-      <div className="h-full w-full grid grid-rows-7 gap-4">
+    <div className="h-custom1 w-full mt-16">
+      <div className="h-full grid grid-rows-7 gap-4">
         <div className="flex flex-col row-span-1 justify-center items-center font-bold text-slate-700">
           <p className="text-teal-500 font-medium text-lg mb-4">
             04<span className="font-medium text-lg mb-10">. What’s Next?</span>
@@ -16,12 +16,12 @@ const Connect = () => {
           </button>
         </div>
 
-        <div className="mt-auto w-full row-span-1 flex flex-col justify-center items-center text-center text-sm font-bold text-slate-700 p-6">
+        <div className="md:mt-auto w-full row-span-1 flex flex-col justify-center items-center text-center text-sm font-bold text-slate-700 p-6">
           <p>Copyright &copy; 2024. All rights are reserved.</p>
         </div>
       </div>
     </div>
   );
 };
- 
+
 export default Connect;
