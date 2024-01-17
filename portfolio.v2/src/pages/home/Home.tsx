@@ -28,7 +28,9 @@ const Home = () => {
               />
             </p>
           </div>
-          <div className="grid grid-cols-3 w-36 py-2 ">
+          {/* <div className="md:grid md:grid-cols-3 w-full md:w-36 flex items-center justify-center gap-3 md:gap-2 "> */}
+
+          <div className="md:grid md:grid-cols-3 w-full md:w-36 py-2 md:justify-start md:items-start flex items-center justify-center md:gap-2 gap-3 ">
             <SocialIcons
               link="https://www.linkedin.com/in/pragyo-tandukar-1291b6233/"
               icon={<FaLinkedin />}
