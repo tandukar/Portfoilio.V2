@@ -1,13 +1,13 @@
 const Connect = () => {
   return (
-    <div className="h-custom1 w-full mt-16">
+    <div className="h-custom1 w-full mt-16 ">
       <div className="h-full w-full grid grid-rows-7 gap-4">
         <div className="flex flex-col row-span-1 justify-center items-center font-bold text-slate-700">
           <p className="text-teal-500 font-medium text-lg mb-4">
             04<span className="font-medium text-lg mb-10">. What’s Next?</span>
           </p>
           <h1 className="text-5xl mb-12">Get in Touch</h1>
-          <p className="text-md text-center w-custom1 mb-10">
+          <p className="text-md text-center md:w-custom1 mb-10">
             Feel free to reach out if you have any questions, ideas, or just
             want to say hello! I'm looking forward to hearing from you.
           </p>
