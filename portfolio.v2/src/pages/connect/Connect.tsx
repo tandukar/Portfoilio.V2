@@ -7,7 +7,7 @@ const Connect = () => {
             04<span className="font-medium text-lg mb-10">. What’s Next?</span>
           </p>
           <h1 className="text-5xl mb-12">Get in Touch</h1>
-          <p className="text-md text-center md:w-custom1 mb-10">
+          <p className="text-md text-center md:w-custom1 mb-10 py-4 md:px-0 px-4">
             Feel free to reach out if you have any questions, ideas, or just
             want to say hello! I'm looking forward to hearing from you.
           </p>
