@@ -8,9 +8,9 @@ import SocialIcons from "./SocialIcons";
 
 const Home = () => {
   return (
-    <div className="min-h-screen  flex items-center justify-center  ">
-      <div className="grid md:grid-cols-2  mx-auto  gap-40  items-center">
-        <div className="grid grid-rows-3 w-96">
+    <div className="min-h-screen  flex items-center md:justify-center  ">
+      <div className="grid md:grid-cols-2 grid-rows-1  mx-auto md:gap-40 items-center">
+        <div className="grid grid-rows-3 w-96 md:order-1 order-2">
           <div className="text-neutral-300  md:ml-0 md:w-96 ">
             <h1 className="md:text-5xl text-4xl md:text-left  text-center text-neutral-800 font-poppins">
               Fullstack Web Developer.
@@ -45,7 +45,7 @@ const Home = () => {
             />
           </div>
         </div>
-        <div>
+        <div className="order-1">
           <img src={"catGif.gif"} alt="Location Pin GIF" />
         </div>
       </div>
