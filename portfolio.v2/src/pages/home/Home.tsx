@@ -4,11 +4,10 @@ import "../navbar/Nav";
 import Nav from "../navbar/Nav";
 import "./SocialIcons";
 import SocialIcons from "./SocialIcons";
-// import { lazy, Suspense } from 'react';
 
 const Home = () => {
   return (
-    <div className="min-h-screen  flex items-center md:justify-center  ">
+      <div className="min-h-screen md:flex md:items-center md:justify-center mt-20 md:mt-0 "> 
       <div className="grid md:grid-cols-2 grid-rows-1  mx-auto md:gap-40 items-center">
         <div className="grid grid-rows-3 w-96 md:order-1 order-2">
           <div className="text-neutral-300  md:ml-0 md:w-96 ">
