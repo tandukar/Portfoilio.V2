@@ -44,7 +44,7 @@ const Home = () => {
           </div>
         </div>
         <div className="order-1">
-          <img src={"catGif.gif"} alt="Location Pin GIF" />
+          <img src={"../../src/assets/images/catGif.gif"} alt="Location Pin GIF" />
         </div>
       </div>
       <Nav />
