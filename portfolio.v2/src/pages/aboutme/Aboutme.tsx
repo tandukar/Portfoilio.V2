@@ -1,11 +1,46 @@
+import React from "react";
 
-const Aboutme = () => {
-    return (
-        <div>
-            <h1>About me</h1>
-            <p>Hi, I'm a software engineer based in the Bay Area. I'm passionate about building scalable and maintainable applications. I'm currently working as a software engineer at a startup called <a href="https://www.heyday.ai/" target="_blank" rel="noreferrer">Heyday</a>. I'm also a part-time student at <a href="https://www.ubc.ca/" target="_blank" rel="noreferrer">UBC</a> pursuing a Bachelor of Computer Science.</p>
-            <p>When I'm not coding, I enjoy playing basketball, watching movies, and playing video games.</p>
-        </div>
-    );
-}
-export default Aboutme;
+const MyDescription = () => {
+  return (
+    <div className="flex items-center justify-center text-justify">
+      <div className="w-custom mx-auto p-4">
+        <h2 className=" flex items-center text-3xl font-bold text-slate-700 mb-8">
+          <span className="text-custom-beige2 mr-2 font-semibold text-2xl  ">
+            01 <span className="text-3xl text-bold">.</span>
+          </span>
+          About Me
+        </h2>
+        <p className="mb-4">
+          My name is [Your Name], and I enjoy creating things that live on the
+          internet. My journey into [specific details, e.g., web development]
+          started back in [Year] when [mention a specific experience, e.g., I
+          decided to try editing custom Tumblr themes]. Turns out, [share a
+          lesson learned, e.g., hacking together a custom reblog button taught
+          me a lot about HTML & CSS]! Fast-forward to today, and I’ve had the
+          privilege of [mention a few experiences, e.g., working at an
+          advertising agency, a start-up, a huge corporation, and a student-led
+          design studio]. My main focus these days is [current focus, e.g.,
+          building accessible, inclusive products and digital experiences at
+          [Your Current Workplace] for a variety of clients]. I also recently
+          [mention a recent accomplishment, e.g., launched a course] that covers
+          everything you need to [specific details, e.g., build a web app with
+          the Spotify API using Node & React].
+        </p>
+        <p className="mb-2">
+          Here are a few technologies I’ve been working with recently:
+        </p>
+        <ul className="list-disc pl-4 mb-4">
+          <li>Node.js</li>
+          <li>TypeScript</li>
+          <li>React</li>
+          <li>Django</li>
+          <li>MongoDB</li>
+          <li>MySQL</li>
+          <li>PostgreSQL</li>
+        </ul>
+      </div>
+    </div>
+  );
+};
+
+export default MyDescription;
