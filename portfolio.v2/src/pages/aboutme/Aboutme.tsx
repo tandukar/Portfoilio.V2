@@ -29,14 +29,20 @@ const MyDescription = () => {
         <p className="mb-2">
           Here are a few technologies I’ve been working with recently:
         </p>
-        <ul className="list-disc pl-4 mb-4">
+        <ul className="flex flex-row-2 items-center justify-center">
+            <div>
           <li>Node.js</li>
           <li>TypeScript</li>
           <li>React</li>
+          <li>JavaScript</li>
+          </div>
+          <div>
+          <li>Python</li>
           <li>Django</li>
           <li>MongoDB</li>
           <li>MySQL</li>
           <li>PostgreSQL</li>
+          </div>
         </ul>
       </div>
     </div>
