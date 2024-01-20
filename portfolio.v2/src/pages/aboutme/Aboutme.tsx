@@ -7,7 +7,7 @@ import "react-vertical-timeline-component/style.min.css";
 
 const Aboutme = () => {
   return (
-    <div className="flex items-center justify-center text-justify h-screen ">
+    <div className="flex items-center justify-center text-justify h-screen">
       <div className="w-custom">
         <h2 className="flex items-center text-3xl font-bold text-slate-700 mb-8">
           <span className="text-custom-beige2 mr-2 font-semibold text-2xl ">
@@ -22,7 +22,8 @@ const Aboutme = () => {
             contentStyle={{ background: "#115e59", color: "#ffff  " }}
             contentArrowStyle={{ borderRight: "7px solid  #115e59" }}
             iconStyle={{ background: "#33BFA8" }}
-            icon={<img src="../../src/assets/images/skillz.jpg"></img>}
+            icon={<img src="../../src/assets/images/skillz.jpg" className="object-fit"></img>}
+            iconOnClick={ () => {console.log("clicked")} }
           >
             <div className="vertical-timeline-element-title font-bold">
               Your Skills
@@ -40,7 +41,9 @@ const Aboutme = () => {
             className="vertical-timeline-element--work"
             contentStyle={{ background: "#115e59", color: "#ffff  " }}
             contentArrowStyle={{ borderRight: "7px solid  #115e59" }}
-            iconStyle={{ background: "#33BFA8" }}
+            icon={<img src="../../src/assets/images/experience.png " className="object-fill"></img>}
+            
+            iconStyle={{ background: "#ffff" }}
           >
             <div className="vertical-timeline-element-title font-bold">
               Your Work Experience
