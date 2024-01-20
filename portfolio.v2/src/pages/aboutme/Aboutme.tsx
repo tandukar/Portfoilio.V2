@@ -31,19 +31,21 @@ const Aboutme = () => {
               console.log("clicked");
             }}
           >
-            <div className="vertical-timeline-element-title font-bold">
+            <div className="vertical-timeline-element-title font-semibold text-2xl">
               Your Skills
             </div>
 
             <div className="vertical-timeline-element-subtitle">
-              <div className="grid grid-rows py-3 bg-slate-600 gap-5">
-                <div className="inline-flex">
+              <div className="grid grid-rows py-3 mt-3  gap-5">
+                <div className="inline-flex font-semibold">
                   Frontend Skills
+                  <span className="border-l-2 mx-2 h-7 border-white"></span>
                   <img className="h-7 ml-1" src="https://skillicons.dev/icons?i=express,nodejs"></img>
                 </div>
-                <div className="inline-flex">
-                  Backend Skills
-                  <img className="h-7 ml-2" src="https://skillicons.dev/icons?i=express,nodejs"></img>
+                <div className="inline-flex font-semibold">
+                  Backend  Skills
+                  <span className="border-l-2 mx-2 h-7 border-white ml-3"></span>
+                  <img className="h-7 ml-1" src="https://skillicons.dev/icons?i=express,nodejs"></img>
                 </div>
               </div>
             </div>
