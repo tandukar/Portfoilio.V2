@@ -15,10 +15,17 @@ const Aboutme = () => {
           About Me
         </h2>
 
-        <VerticalTimeline   lineColor="linear-gradient(to bottom, #2ecc71, #1abc9c, #3498db, #206a5d, #006000)" layout="1-column-left">
+        <VerticalTimeline
+          lineColor="linear-gradient(to bottom, #2ecc71, #1abc9c, #3498db, #206a5d, #006000)"
+          layout="1-column-left"
+        >
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: "#115e59", color: "#ffff  " ,borderRadius:"15px"}}
+            contentStyle={{
+              background: "#115e59",
+              color: "#ffff",
+              borderRadius: "15px",
+            }}
             contentArrowStyle={{ borderRight: "10px solid  #115e59" }}
             iconStyle={{ background: "#33BFA8" }}
             icon={
@@ -32,7 +39,7 @@ const Aboutme = () => {
             }}
           >
             <div className="vertical-timeline-element-title font-semibold text-2xl">
-              Your Skills
+              Skills
             </div>
 
             <div className="vertical-timeline-element-subtitle pl-5">
@@ -90,7 +97,11 @@ const Aboutme = () => {
 
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: "#115e59", color: "#ffff  " }}
+            contentStyle={{
+              background: "#115e59",
+              color: "#ffff",
+              borderRadius: "15px",
+            }}
             contentArrowStyle={{ borderRight: "7px solid  #115e59" }}
             icon={
               <img
@@ -101,32 +112,30 @@ const Aboutme = () => {
             iconStyle={{ background: "#ffff" }}
           >
             <div className="vertical-timeline-element-title font-bold">
-              Your Work Experience
+              Work Experience
             </div>
           </VerticalTimelineElement>
 
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: "#115e59", color: "#ffff  " }}
+            contentStyle={{
+              background: "#115e59",
+              color: "#ffff",
+              borderRadius: "15px",
+            }}
             contentArrowStyle={{ borderRight: "7px solid  #115e59" }}
             iconStyle={{ background: "#33BFA8" }}
           >
             <div className="vertical-timeline-element-title font-bold">
-              Your Education
-            </div>
-          </VerticalTimelineElement>
-
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            contentStyle={{ background: "#115e59", color: "#ffff  " }}
-            contentArrowStyle={{ borderRight: "7px solid  #115e59" }}
-            iconStyle={{ background: "#33BFA8" }}
-          >
-            <div className="vertical-timeline-element-title font-bold">
-              Your Resume
+              Education
             </div>
           </VerticalTimelineElement>
         </VerticalTimeline>
+        <div className="flex justify-center items-center h-full">
+          <button className="hover:bg-teal-600 border-2 mt-20 font-bold rounded-md text-slate-700 hover:text-white border-teal-600 active:bg-teal-600 p-4 w-44 ">
+            View my Resume
+          </button>
+        </div>
       </div>
     </div>
   );
