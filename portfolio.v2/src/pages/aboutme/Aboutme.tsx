@@ -15,7 +15,7 @@ const Aboutme = () => {
           About Me
         </h2>
 
-        <VerticalTimeline lineColor="#535C5A  " layout="1-column-left">
+        <VerticalTimeline   lineColor="linear-gradient(to bottom, #2ecc71, #1abc9c, #3498db, #206a5d, #006000)" layout="1-column-left">
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             contentStyle={{ background: "#115e59", color: "#ffff  " ,borderRadius:"15px"}}
