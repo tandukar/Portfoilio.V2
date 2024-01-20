@@ -3,28 +3,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { AiOutlineDatabase } from "react-icons/ai";
-import {
-  faReact,
-  faNodeJs,
-  faJs,
-  faPython,
-  faHtml5,
-  faCss3,
-  faBootstrap,
-} from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
-
-const SkillBadge = ({ icon, text }: { icon: IconDefinition; text: string }) => {
-  return (
-    <div className="flex items-center m-2">
-      <FontAwesomeIcon icon={icon} size="2x" className="mr-2" />
-      <span className="text-white">{text}</span>
-    </div>
-  );
-};
 
 const Aboutme = () => {
   return (
@@ -43,6 +22,7 @@ const Aboutme = () => {
             contentStyle={{ background: "#115e59", color: "#ffff  " }}
             contentArrowStyle={{ borderRight: "7px solid  #115e59" }}
             iconStyle={{ background: "#33BFA8" }}
+            icon={<img src="../../src/assets/images/skillz.jpg"></img>}
           >
             <div className="vertical-timeline-element-title font-bold">
               Your Skills
@@ -50,14 +30,8 @@ const Aboutme = () => {
 
             <div className="vertical-timeline-element-subtitle">
               <div className="flex flex-wrap justify-center">
-                <SkillBadge icon={faReact} text="MERN" />
-                <SkillBadge icon={faJs} text="Redux Toolkit" />
-                <SkillBadge icon={faJs} text="JavaScript" />
-                <SkillBadge icon={faNodeJs} text="Node.js" />
-                <SkillBadge icon={faPython} text="Python" />
-                <SkillBadge icon={faHtml5} text="HTML" />
-                <SkillBadge icon={faCss3} text="CSS" />
-                <SkillBadge icon={faBootstrap} text="Bootstrap" />
+
+                <img src="https://skillicons.dev/icons?i=express,nodejs"></img>
               </div>
             </div>
           </VerticalTimelineElement>
