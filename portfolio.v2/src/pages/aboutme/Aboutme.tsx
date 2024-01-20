@@ -1,52 +1,58 @@
-import React from "react";
-
-const MyDescription = () => {
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
+const Aboutme = () => {
   return (
-    <div className="flex items-center justify-center text-justify h-screen ">
-      <div className="w-custom  ">
-        <h2 className=" flex items-center text-3xl font-bold text-slate-700 mb-8">
-          <span className="text-custom-beige2 mr-2 font-semibold text-2xl  ">
+    <div className="flex items-center justify-center text-justify h-screen">
+      <div className="w-custom">
+        <h2 className="flex items-center text-3xl font-bold text-slate-700 mb-8">
+          <span className="text-custom-beige2 mr-2 font-semibold text-2xl ">
             01 <span className="text-3xl text-bold">.</span>
           </span>
           About Me
         </h2>
-        <p className="mb-4">
-          My name is [Your Name], and I enjoy creating things that live on the
-          internet. My journey into [specific details, e.g., web development]
-          started back in [Year] when [mention a specific experience, e.g., I
-          decided to try editing custom Tumblr themes]. Turns out, [share a
-          lesson learned, e.g., hacking together a custom reblog button taught
-          me a lot about HTML & CSS]! Fast-forward to today, and I’ve had the
-          privilege of [mention a few experiences, e.g., working at an
-          advertising agency, a start-up, a huge corporation, and a student-led
-          design studio]. My main focus these days is [current focus, e.g.,
-          building accessible, inclusive products and digital experiences at
-          [Your Current Workplace] for a variety of clients]. I also recently
-          [mention a recent accomplishment, e.g., launched a course] that covers
-          everything you need to [specific details, e.g., build a web app with
-          the Spotify API using Node & React].
-        </p>
-        <p className="mb-2">
-          Here are a few technologies I’ve been working with recently:
-        </p>
-        <ul className="flex flex-wrap justify-center gap-4">
-  <div className="text-center">
-    <li className="list-disc">Node.js</li>
-    <li className="list-disc">TypeScript</li>
-    <li className="list-disc">React</li>
-    <li className="list-disc">JavaScript</li>
-  </div>
-  <div className="text-center">
-    <li className="list-disc">Python</li>
-    <li className="list-disc">Django</li>
-    <li className="list-disc">MongoDB</li>
-    <li className="list-disc">MySQL</li>
-    <li className="list-disc">PostgreSQL</li>
-  </div>
-  </ul>
-  </div>
+
+        {/* Timeline */}
+        <VerticalTimeline>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+            date="Skills"
+          >
+            <h2 className="vertical-timeline-element-title">Your Skills</h2>
+          </VerticalTimelineElement>
+
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+            date="Work Experience"
+          >
+            <h2 className="vertical-timeline-element-title">Your Work Experience</h2>
+          </VerticalTimelineElement>
+
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+            date="Education"
+          >
+            <h2 className="vertical-timeline-element-title">Your Education</h2>
+          </VerticalTimelineElement>
+
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+            date="Resume"
+          >
+            <h2 className="vertical-timeline-element-title">Your Resume</h2>
+          </VerticalTimelineElement>
+        </VerticalTimeline>
+        {/* End Timeline */}
+      </div>
     </div>
   );
 };
 
-export default MyDescription;
+export default Aboutme;
