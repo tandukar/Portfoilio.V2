@@ -30,7 +30,8 @@ const Aboutme = () => {
             iconStyle={{ background: "#33BFA8" }}
             icon={
               <img
-                src="../../src/assets/images/skillz.jpg"
+                // src="../../src/assets/images/skillz.jpg"
+                src="skillz.jpg"
                 className="object-fit"
               ></img>
             }
@@ -105,7 +106,9 @@ const Aboutme = () => {
             contentArrowStyle={{ borderRight: "7px solid  #115e59" }}
             icon={
               <img
-                src="../../src/assets/images/experience.png "
+                // src="../../src/assets/images/experience.png "
+                src= "experience.png"
+                alt="Experience"
                 className="object-fill"
               ></img>
             }

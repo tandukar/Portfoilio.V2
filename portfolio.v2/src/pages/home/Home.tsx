@@ -21,7 +21,8 @@ const Home = () => {
               fullstack web developer hailing from the beautiful city of
               Lalitpur, Nepal.
               <img
-                src={"../../src/assets/images/wired-flat-18-location-pin-red.gif"}
+                // src={"../../src/assets/images/wired-flat-18-location-pin-red.gif"}
+                src={"wired-flat-18-location-pin-red.gif"}
                 alt="Location Pin GIF"
                 className=" inline-block h-6 w-6 align-bottom"
               />
@@ -44,7 +45,8 @@ const Home = () => {
           </div>
         </div>
         <div className="order-1">
-          <img src={"../../src/assets/images/catGif.gif"} alt="Cute CatF" />
+          {/* <img src={"../../src/assets/images/catGif.gif"} alt="Cute Cat" /> */}
+          <img src={"catGif.gif"} alt="Cute Cat" />
         </div>
       </div>
       <Nav />
