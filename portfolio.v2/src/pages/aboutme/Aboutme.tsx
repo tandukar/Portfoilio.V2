@@ -47,6 +47,11 @@ const Aboutme = () => {
                   <span className="border-l-2 mx-2 h-7 border-white ml-3"></span>
                   <img className="h-7 ml-1" src="https://skillicons.dev/icons?i=express,nodejs"></img>
                 </div>
+                <div className="inline-flex font-semibold">
+                  Database  Skills
+                  <span className="border-l-2 mx-2 h-7 border-white ml-3"></span>
+                  <img className="h-7 ml-1" src="https://skillicons.dev/icons?i=express,nodejs"></img>
+                </div>
               </div>
             </div>
           </VerticalTimelineElement>
