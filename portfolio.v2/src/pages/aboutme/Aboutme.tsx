@@ -68,10 +68,9 @@ const Aboutme = () => {
             contentArrowStyle={{ borderRight: "7px solid  #115e59" }}
             iconStyle={{ background: "#33BFA8" }}
           >
-            Your Work Experience
-
-
-            
+            <div className="vertical-timeline-element-title font-bold">
+              Your Work Experience
+            </div>
           </VerticalTimelineElement>
 
           <VerticalTimelineElement
@@ -80,7 +79,9 @@ const Aboutme = () => {
             contentArrowStyle={{ borderRight: "7px solid  #115e59" }}
             iconStyle={{ background: "#33BFA8" }}
           >
-            Your Education
+            <div className="vertical-timeline-element-title font-bold">
+              Your Education
+            </div>
           </VerticalTimelineElement>
 
           <VerticalTimelineElement
@@ -89,7 +90,9 @@ const Aboutme = () => {
             contentArrowStyle={{ borderRight: "7px solid  #115e59" }}
             iconStyle={{ background: "#33BFA8" }}
           >
-            Your Resume
+            <div className="vertical-timeline-element-title font-bold">
+              Your Resume
+            </div>
           </VerticalTimelineElement>
         </VerticalTimeline>
       </div>
