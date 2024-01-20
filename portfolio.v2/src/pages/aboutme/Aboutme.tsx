@@ -18,8 +18,8 @@ const Aboutme = () => {
         <VerticalTimeline lineColor="#535C5A  " layout="1-column-left">
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: "#115e59", color: "#ffff  " }}
-            contentArrowStyle={{ borderRight: "7px solid  #115e59" }}
+            contentStyle={{ background: "#115e59", color: "#ffff  " ,borderRadius:"15px"}}
+            contentArrowStyle={{ borderRight: "10px solid  #115e59" }}
             iconStyle={{ background: "#33BFA8" }}
             icon={
               <img
@@ -35,7 +35,7 @@ const Aboutme = () => {
               Your Skills
             </div>
 
-            <div className="vertical-timeline-element-subtitle">
+            <div className="vertical-timeline-element-subtitle pl-5">
               <div className="grid grid-rows py-3 mt-3  gap-5">
                 <div className="inline-flex font-semibold">
                   Frontend Stack
