@@ -39,18 +39,37 @@ const Aboutme = () => {
               <div className="grid grid-rows py-3 mt-3  gap-5">
                 <div className="inline-flex font-semibold">
                   Frontend Stack
-                  <span className="border-l-2 mx-2 h-7 border-white"></span>
-                  <img className="h-7 ml-1" src="https://skillicons.dev/icons?i=express,nodejs"></img>
+                  <span className="border-l-2 mx-2 h-8   border-white ml-4"></span>
+                  <div className="inline-flex gap-4">
+                    <img
+                      className="h-8 ml-1"
+                      src="https://skillicons.dev/icons?i=html,css"
+                    ></img>
+                    <img
+                      className="h-8 "
+                      src="https://skillicons.dev/icons?i=react,tailwind"
+                    ></img>
+                    <img
+                      className="h-8 "
+                      src="https://skillicons.dev/icons?i=js,ts"
+                    ></img>
+                  </div>
                 </div>
                 <div className="inline-flex font-semibold">
-                  Backend  Stack
-                  <span className="border-l-2 mx-2 h-7 border-white ml-3"></span>
-                  <img className="h-7 ml-1" src="https://skillicons.dev/icons?i=express,nodejs"></img>
+                  Backend Stack
+                  <span className="border-l-2 mx-2 h-8 border-white ml-5"></span>
+                  <img
+                    className="h-7 ml-1"
+                    src="https://skillicons.dev/icons?i=express,nodejs"
+                  ></img>
                 </div>
                 <div className="inline-flex font-semibold">
-                  Database  Stack
-                  <span className="border-l-2 mx-2 h-7 border-white ml-3"></span>
-                  <img className="h-7 ml-1" src="https://skillicons.dev/icons?i=express,nodejs"></img>
+                  Database Stack
+                  <span className="border-l-2 mx-2 h-8 border-white ml-4"></span>
+                  <img
+                    className="h-7 ml-1"
+                    src="https://skillicons.dev/icons?i=express,nodejs"
+                  ></img>
                 </div>
               </div>
             </div>
