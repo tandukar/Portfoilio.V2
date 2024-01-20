@@ -4,7 +4,6 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
-
 const Aboutme = () => {
   return (
     <div className="flex items-center justify-center text-justify h-screen">
@@ -22,17 +21,30 @@ const Aboutme = () => {
             contentStyle={{ background: "#115e59", color: "#ffff  " }}
             contentArrowStyle={{ borderRight: "7px solid  #115e59" }}
             iconStyle={{ background: "#33BFA8" }}
-            icon={<img src="../../src/assets/images/skillz.jpg" className="object-fit"></img>}
-            iconOnClick={ () => {console.log("clicked")} }
+            icon={
+              <img
+                src="../../src/assets/images/skillz.jpg"
+                className="object-fit"
+              ></img>
+            }
+            iconOnClick={() => {
+              console.log("clicked");
+            }}
           >
             <div className="vertical-timeline-element-title font-bold">
               Your Skills
             </div>
 
             <div className="vertical-timeline-element-subtitle">
-              <div className="flex flex-wrap justify-center">
-
-                <img src="https://skillicons.dev/icons?i=express,nodejs"></img>
+              <div className="grid grid-rows py-3 bg-slate-600 gap-5">
+                <div className="inline-flex">
+                  Frontend Skills
+                  <img className="h-7 ml-1" src="https://skillicons.dev/icons?i=express,nodejs"></img>
+                </div>
+                <div className="inline-flex">
+                  Backend Skills
+                  <img className="h-7 ml-2" src="https://skillicons.dev/icons?i=express,nodejs"></img>
+                </div>
               </div>
             </div>
           </VerticalTimelineElement>
@@ -41,8 +53,12 @@ const Aboutme = () => {
             className="vertical-timeline-element--work"
             contentStyle={{ background: "#115e59", color: "#ffff  " }}
             contentArrowStyle={{ borderRight: "7px solid  #115e59" }}
-            icon={<img src="../../src/assets/images/experience.png " className="object-fill"></img>}
-            
+            icon={
+              <img
+                src="../../src/assets/images/experience.png "
+                className="object-fill"
+              ></img>
+            }
             iconStyle={{ background: "#ffff" }}
           >
             <div className="vertical-timeline-element-title font-bold">
