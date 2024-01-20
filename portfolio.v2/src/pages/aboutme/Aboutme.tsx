@@ -67,17 +67,22 @@ const Aboutme = () => {
                       className="h-8 "
                       src="https://skillicons.dev/icons?i=python,django"
                     ></img>
-                   
                   </div>
                 </div>
 
                 <div className="inline-flex font-semibold">
                   Database Stack
                   <span className="border-l-2 mx-2 h-8 border-white ml-4"></span>
-                  <img
-                    className="h-7 ml-1"
-                    src="https://skillicons.dev/icons?i=express,nodejs"
-                  ></img>
+                  <div className="inline-flex gap-4">
+                    <img
+                      className="h-8 ml-1"
+                      src="https://skillicons.dev/icons?i=mysql,sqlite"
+                    ></img>
+                    <img
+                      className="h-8 "
+                      src="https://skillicons.dev/icons?i=postgresql,mongo"
+                    ></img>
+                  </div>
                 </div>
               </div>
             </div>
