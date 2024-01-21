@@ -140,7 +140,8 @@ const Aboutme = () => {
           </VerticalTimelineElement>
         </VerticalTimeline>
         <div className="flex justify-center items-center h-full">
-          <button className="hover:bg-teal-600 border-2 mt-20 font-bold rounded-md text-slate-700 hover:text-white border-teal-600 active:bg-teal-600 p-4 w-44 ">
+          <button onClick={() => {open("Resume.pdf")}}
+          className="hover:bg-teal-600 border-2 mt-20 font-bold rounded-md text-slate-700 hover:text-white border-teal-600 active:bg-teal-600 p-4 w-44 ">
             View my Resume
           </button>
         </div>
