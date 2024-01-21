@@ -146,8 +146,14 @@ const Aboutme = () => {
             contentArrowStyle={{ borderRight: "7px solid  #115e59" }}
             iconStyle={{ background: "#33BFA8" }}
           >
-            <div className="vertical-timeline-element-title font-bold">
+            <div className="vertical-timeline-element-title font-semibold  text-2xl">
               Education
+            </div>
+
+            <div className="vertical-timeline-element-subtitle pl-5  ">
+              <div className="grid grid-rows py-3 mt-3  gap-5">
+                <div className="inline-flex font-semibold">Herald College Kathmandu (HCK)</div>
+              </div>
             </div>
           </VerticalTimelineElement>
         </VerticalTimeline>
