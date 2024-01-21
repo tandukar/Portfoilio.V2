@@ -3,10 +3,13 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import { Tooltip } from "react-tooltip";
 
 const Aboutme = () => {
   return (
     <div className="flex items-center justify-center text-justify h-screen">
+      <Tooltip id="my-tooltip" />
+
       <div className="w-custom">
         <h2 className="flex items-center text-3xl font-bold text-slate-700 mb-8">
           <span className="text-custom-beige2 mr-2 font-semibold text-2xl ">
@@ -25,7 +28,8 @@ const Aboutme = () => {
               background: "#115e59",
               color: "#ffff",
               borderRadius: "15px",
-              boxShadow: 'none',
+              boxShadow: "none",
+              zIndex: -1,
             }}
             contentArrowStyle={{ borderRight: "10px solid  #115e59" }}
             iconStyle={{ background: "#33BFA8" }}
@@ -36,24 +40,27 @@ const Aboutme = () => {
                 className="object-fit"
               ></img>
             }
-            iconOnClick={() => {
-              console.log("clicked");
-            }}
           >
             <div className="vertical-timeline-element-title font-semibold text-2xl">
               Skills
             </div>
 
-            <div className="vertical-timeline-element-subtitle pl-5">
+            <div className="vertical-timeline-element-subtitle pl-5  ">
               <div className="grid grid-rows py-3 mt-3  gap-5">
                 <div className="inline-flex font-semibold">
                   Frontend Stack
                   <span className="border-l-2 mx-2 h-8   border-white ml-4"></span>
                   <div className="inline-flex gap-4">
-                    <img
-                      className="h-8 ml-1"
-                      src="https://skillicons.dev/icons?i=html,css"
-                    ></img>
+                    <a
+                      data-tooltip-id="my-tooltip"
+                      data-tooltip-content="HTML and CSS"
+                    >
+                      <img
+                        className="h-8 ml-1"
+                        src="https://skillicons.dev/icons?i=html,css"
+                      ></img>
+                    </a>
+
                     <img
                       className="h-8 "
                       src="https://skillicons.dev/icons?i=react,tailwind"
@@ -103,22 +110,27 @@ const Aboutme = () => {
               background: "#115e59",
               color: "#ffff",
               borderRadius: "15px",
-              boxShadow: 'none',
-
+              boxShadow: "none",
             }}
             contentArrowStyle={{ borderRight: "7px solid  #115e59" }}
             icon={
               <img
                 // src="../../src/assets/images/experience.png "
-                src= "experience.png"
+                src="experience.png"
                 alt="Experience"
                 className="object-fill"
               ></img>
             }
             iconStyle={{ background: "#ffff" }}
           >
-            <div className="vertical-timeline-element-title font-bold">
-              Work Experience
+            <div className="vertical-timeline-element-title font-semibold  text-2xl">
+              Experience
+            </div>
+
+            <div className="vertical-timeline-element-subtitle pl-5  ">
+              <div className="grid grid-rows py-3 mt-3  gap-5">
+                <div className="inline-flex font-semibold">Freelance</div>
+              </div>
             </div>
           </VerticalTimelineElement>
 
@@ -128,8 +140,7 @@ const Aboutme = () => {
               background: "#115e59",
               color: "#ffff",
               borderRadius: "15px",
-              boxShadow: 'none',
-
+              boxShadow: "none",
             }}
             contentArrowStyle={{ borderRight: "7px solid  #115e59" }}
             iconStyle={{ background: "#33BFA8" }}
@@ -140,8 +151,12 @@ const Aboutme = () => {
           </VerticalTimelineElement>
         </VerticalTimeline>
         <div className="flex justify-center items-center h-full">
-          <button onClick={() => {open("Resume.pdf")}}
-          className="hover:bg-teal-600 border-2 mt-20 font-bold rounded-md text-slate-700 hover:text-white border-teal-600 active:bg-teal-600 p-4 w-44 ">
+          <button
+            onClick={() => {
+              open("Resume.pdf");
+            }}
+            className="hover:bg-teal-600 border-2 mt-20 font-bold rounded-md text-slate-700 hover:text-white border-teal-600 active:bg-teal-600 p-4 w-44 "
+          >
             View my Resume
           </button>
         </div>
