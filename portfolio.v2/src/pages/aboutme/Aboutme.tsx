@@ -130,6 +130,7 @@ const Aboutme = () => {
             <div className="vertical-timeline-element-subtitle pl-5  ">
               <div className="grid grid-rows py-3 mt-3  gap-5">
                 <div className="inline-flex font-semibold">Freelance</div>
+                <div className="inline-flex font-semibold">Work Experience</div>
               </div>
             </div>
           </VerticalTimelineElement>
