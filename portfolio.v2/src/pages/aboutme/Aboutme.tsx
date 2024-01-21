@@ -25,6 +25,7 @@ const Aboutme = () => {
               background: "#115e59",
               color: "#ffff",
               borderRadius: "15px",
+              boxShadow: 'none',
             }}
             contentArrowStyle={{ borderRight: "10px solid  #115e59" }}
             iconStyle={{ background: "#33BFA8" }}
