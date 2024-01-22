@@ -18,7 +18,7 @@ const ProjectsItems: React.FC<
 
   return (
     <div>
-      <div className="w-full h-custom grid grid-cols-5  relative  ">
+      <div className="w-full h-custom grid grid-cols-5  relative">
         <div
           className={`z-50  ${
             isImageOnLeft ? "col-span-3 order-1  left-0 " : "col-span-3 right-0"

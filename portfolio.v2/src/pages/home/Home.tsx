@@ -7,7 +7,7 @@ import SocialIcons from "./SocialIcons";
 
 const Home = () => {
   return (
-      <div className="min-h-screen md:flex md:items-center md:justify-center mt-20 md:mt-0 "> 
+      <div className="min-h-screen flex items-center md:justify-center -mt-32 md:mt-10 "> 
       <div className="grid md:grid-cols-2 grid-rows-1  mx-auto md:gap-40 items-center">
         <div className="grid grid-rows-3 w-96 md:order-1 order-2">
           <div className="text-neutral-300  md:ml-0 md:w-96 ">
@@ -44,7 +44,7 @@ const Home = () => {
             />
           </div>
         </div>
-        <div className="order-1">
+        <div className="order-1 flex items-center justify-center">
           {/* <img src={"../../src/assets/images/catGif.gif"} alt="Cute Cat" /> */}
           <img src={"catGif.gif"} alt="Cute Cat" />
         </div>
