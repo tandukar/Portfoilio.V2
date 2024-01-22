@@ -28,7 +28,7 @@ const Nav = () => {
   ];
 
   return (
-    <div className="rounded-full bg-black p-1 fixed md:right-5 right-0   h-auto ">
+    <div className="rounded-full bg-black p-1 fixed md:right-5 right-0   h-auto z-50">
       <div className="grid grid-rows-3 gap-5">
         {navItems.map((item, index) => (
           <NavItem key={index} {...item} />

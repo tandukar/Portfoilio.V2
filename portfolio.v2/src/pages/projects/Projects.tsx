@@ -18,7 +18,7 @@ const ProjectsItems: React.FC<
 
   return (
     <div>
-      <div className="w-full h-custom grid grid-cols-5  relative">
+      <div className="w-full h-custom grid grid-cols-5  relative bg-red-200">
         <div
           className={`z-50  ${
             isImageOnLeft ? "col-span-3 order-1  left-0 " : "col-span-3 right-0"
@@ -69,14 +69,6 @@ const ProjectsItems: React.FC<
             />
           </div>
         </div>
-        {/* <img
-          className={`object-cover ${
-            isImageOnLeft ? "col-span-3 order-1" : "col-span-3 "
-          }  w-full h-custom max-h-custom bg-slate-900 rounded-md`}
-          src={img}
-          alt=""
-        /> */}
-
         <div className="w-full h-full col-span-2 grid-rows-4 py-6 gap-2   ">
           <div
             className={` ${
@@ -126,7 +118,7 @@ const Projects = () => {
   return (
     //might need to change this to slate 50
     // <div className="py-16 flex  justify-center bg-custom-navy">
-    <div className="py-16 flex  justify-center">
+    <div className="py-16 flex  justify-center bg-red-700">
       <div className=" w-custom  ">
         <h2 className=" flex items-center text-3xl font-bold text-slate-700 mb-8">
           <span className="text-custom-beige2 mr-2 font-semibold text-2xl align-middle ">

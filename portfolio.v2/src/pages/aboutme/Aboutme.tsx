@@ -29,7 +29,6 @@ const Aboutme = () => {
               color: "#ffff",
               borderRadius: "15px",
               boxShadow: "none",
-              zIndex: -1,
             }}
             contentArrowStyle={{ borderRight: "10px solid  #115e59" }}
             iconStyle={{ background: "#33BFA8" }}
@@ -47,7 +46,7 @@ const Aboutme = () => {
 
             <div className="vertical-timeline-element-subtitle pl-5  ">
               <div className="grid grid-rows py-3 mt-3  gap-5">
-                <div className="inline-flex font-semibold">
+                <div className="md:inline-flex font-semibold text-center">
                   Frontend Stack
                   <span className="border-l-2 mx-2 h-8   border-white ml-4"></span>
                   <div className="inline-flex gap-4">
