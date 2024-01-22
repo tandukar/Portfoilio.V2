@@ -85,7 +85,7 @@ const Aboutme = () => {
                   </div>
                 </div>
 
-                <div className="inline-flex font-semibold">
+                <div className="md:inline-flex font-semibold text-center">
                   Database Stack
                   <span className="border-l-2 mx-2 h-8 border-white ml-4"></span>
                   <div className="inline-flex gap-4">
