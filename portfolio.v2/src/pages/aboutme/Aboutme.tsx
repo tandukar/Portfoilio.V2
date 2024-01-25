@@ -170,8 +170,12 @@ const Aboutme = () => {
 
             <div className="vertical-timeline-element-subtitle pl-5  ">
               <div className="grid grid-rows py-3 mt-3  gap-5">
-                <div className="inline-flex font-semibold">
+                <div className="font-semibold">
                   Herald College Kathmandu (HCK)
+                  <p className="block text-sm">
+                    BSc (Hons) Computer Science (BIT)
+                    <span className="ml-6"> 2021 - 2023</span>
+                  </p>
                 </div>
               </div>
             </div>
