@@ -177,12 +177,25 @@ const Aboutme = () => {
             </div>
 
             <div className="vertical-timeline-element-subtitle pl-5  ">
-              <div className="flex-between flex-wrap mt-4 font-semibold">
-                Herald College Kathmandu (HCK)
-              </div>
-              <div className="flex-between flex-wrap">
-                <span className="text-sm  ">BSc (Hons) Computer Science (BIT)</span>
-                <span className="text-sm ml-10">2021 - 2023</span>
+              <div className="flex items-center">
+                <div className="w-20 mt-2">
+                  <img
+                    className="h-14"
+                    src="herald.png"
+                    alt="Herald College Logo"
+                  />
+                </div>
+                <div>
+                  <div className="mt-4 font-semibold">
+                    Herald College Kathmandu (HCK)
+                  </div>
+                  <div className="flex-between flex-wrap">
+                    <span className="text-sm">
+                      BSc (Hons) Computer Science (BIT)
+                    </span>
+                    <span className="text-sm ml-10">2021 - 2023</span>
+                  </div>
+                </div>
               </div>
             </div>
           </VerticalTimelineElement>
