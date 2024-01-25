@@ -18,7 +18,7 @@ const ProjectsItems: React.FC<
 
   return (
     <div>
-      <div className="w-full h-custom grid grid-cols-5  relative bg-red-200">
+      <div className="w-full h-custom grid grid-cols-5  relative ">
         <div
           className={`z-50  ${
             isImageOnLeft ? "col-span-3 order-1  left-0 " : "col-span-3 right-0"
@@ -118,7 +118,7 @@ const Projects = () => {
   return (
     //might need to change this to slate 50
     // <div className="py-16 flex  justify-center bg-custom-navy">
-    <div className="py-16 flex  justify-center bg-red-700">
+    <div className="py-16 flex  justify-center ">
       <div className=" w-custom  ">
         <h2 className=" flex items-center text-3xl font-bold text-slate-700 mb-8">
           <span className="text-custom-beige2 mr-2 font-semibold text-2xl align-middle ">

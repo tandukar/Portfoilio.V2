@@ -169,14 +169,12 @@ const Aboutme = () => {
             </div>
 
             <div className="vertical-timeline-element-subtitle pl-5  ">
-              <div className="grid grid-rows py-3 mt-3  gap-5">
-                <div className="font-semibold">
-                  Herald College Kathmandu (HCK)
-                  <p className="block text-sm">
-                    BSc (Hons) Computer Science (BIT)
-                    <span className="ml-6"> 2021 - 2023</span>
-                  </p>
-                </div>
+              <div className="flex-between flex-wrap mt-4">
+                Herald College Kathmandu (HCK)
+              </div>
+              <div className="flex-between flex-wrap">
+                <span className="text-sm ">BSc (Hons) Computer Science (BIT)</span>
+                <span className="text-sm ml-10">2021 - 2023</span>
               </div>
             </div>
           </VerticalTimelineElement>
