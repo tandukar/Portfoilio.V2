@@ -163,6 +163,14 @@ const Aboutme = () => {
             }}
             contentArrowStyle={{ borderRight: "7px solid  #115e59" }}
             iconStyle={{ background: "#33BFA8" }}
+            icon={
+              <img
+                // src="../../src/assets/images/experience.png "
+                src="academic-hat.png"
+                alt="education"
+                className="object-cover"
+              ></img>
+            }
           >
             <div className="vertical-timeline-element-title font-semibold  text-2xl">
               Education
