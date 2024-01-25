@@ -45,10 +45,10 @@ const Aboutme = () => {
             </div>
 
             <div className="vertical-timeline-element-subtitle pl-5  ">
-              <div className="grid grid-rows py-3 mt-3  gap-5">
-                <div className="md:inline-flex font-semibold text-center">
+              <div className="grid md:grid-rows  py-3 mt-3  gap-5">
+                <div className="md:inline-flex font-semibold text-center ">
                   Frontend Stack
-                  <span className="border-l-2 mx-2 h-8   border-white ml-4"></span>
+                  <span className="md:border-l-2 mx-2 h-8  border-white ml-4"></span>
                   <div className="inline-flex gap-4">
                     <a
                       data-tooltip-id="my-tooltip"
@@ -70,10 +70,10 @@ const Aboutme = () => {
                     ></img>
                   </div>
                 </div>
-                <div className="md:inline-flex font-semibold text-center">
-                  Backend Stack
-                  <span className="border-l-2 mx-2 h-8   border-white ml-5"></span>
-                  <div className="inline-flex gap-4">
+                <div className="md:inline-flex font-semibold text-center grid-rows-2  ">
+                  Backend Stack{" "}
+                  <span className="md:border-l-2 mx-2 h-8  border-white ml-5"></span>
+                  <div className="inline-flex gap-4 ">
                     <img
                       className="h-8 ml-1"
                       src="https://skillicons.dev/icons?i=nodejs,express"
@@ -86,8 +86,8 @@ const Aboutme = () => {
                 </div>
 
                 <div className="md:inline-flex font-semibold text-center">
-                  Database Stack
-                  <span className="border-l-2 mx-2 h-8 border-white ml-4"></span>
+                  Database Stack{" "}
+                  <span className="md:border-l-2 mx-2 h-8 border-white ml-4"></span>
                   <div className="inline-flex gap-4">
                     <img
                       className="h-8 ml-1"
@@ -151,7 +151,9 @@ const Aboutme = () => {
 
             <div className="vertical-timeline-element-subtitle pl-5  ">
               <div className="grid grid-rows py-3 mt-3  gap-5">
-                <div className="inline-flex font-semibold">Herald College Kathmandu (HCK)</div>
+                <div className="inline-flex font-semibold">
+                  Herald College Kathmandu (HCK)
+                </div>
               </div>
             </div>
           </VerticalTimelineElement>
