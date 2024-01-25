@@ -126,10 +126,29 @@ const Aboutme = () => {
               Experience
             </div>
 
-            <div className="vertical-timeline-element-subtitle pl-5  ">
-              <div className="grid grid-rows py-3 mt-3  gap-5">
-                <div className="inline-flex font-semibold">Freelance</div>
-                <div className="inline-flex font-semibold">Work Experience</div>
+            <div className="vertical-timeline-element-subtitle pl-5">
+              <div className="grid grid-rows py-3 mt-3 gap-5">
+                {/* Freelance */}
+                <div className="text-lg font-bold ">
+                  Freelance
+                  <div className="text-md font-medium  ml-4">
+                    - Hotel Management System
+                    <span className="text-sm ml-4 italic">
+                      &lt;/Full Stack Developer&gt;
+                    </span>
+                  </div>
+                </div>
+
+                {/* Work Experience */}
+                <div className="text-lg font-bold ">
+                  Work Experience
+                  <div className="text-md font-medium  ml-4">
+                    - Flaresight
+                    <span className="text-sm ml-4 italic">
+                      &lt;/Backend Developer&gt;
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
           </VerticalTimelineElement>
