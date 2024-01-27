@@ -127,26 +127,30 @@ const Aboutme = () => {
             </div>
 
             <div className="vertical-timeline-element-subtitle pl-5">
-  <div className="grid grid-rows py-3 md:mt-3 gap-5">
-    {/* Freelance */}
-    <div className="text-lg font-bold">
-      Freelance
-      <div className="text-md font-medium md:ml-4">
-        - Hotel Management System
-        <span className="text-sm md:ml-4 italic">&lt;/Full Stack Developer&gt;</span>
-      </div>
-    </div>
+              <div className="grid grid-rows py-3 md:mt-3 gap-5">
+                {/* Freelance */}
+                <div className="text-lg font-bold">
+                  Freelance
+                  <div className="text-md font-medium md:ml-4">
+                    - Hotel Management System
+                    <span className="text-sm md:ml-4 italic">
+                      &lt;/Full Stack Developer&gt;
+                    </span>
+                  </div>
+                </div>
 
-    {/* Work Experience */}
-    <div className="text-lg font-bold mt-3 md:mt-0">
-      Work Experience
-      <div className="text-md font-medium md:ml-4">
-        - Flaresight
-        <span className="text-sm md:ml-4 italic">&lt;/Backend Developer&gt;</span>
-      </div>
-    </div>
-  </div>
-</div>
+                {/* Work Experience */}
+                <div className="text-lg font-bold mt-3 md:mt-0">
+                  Work Experience
+                  <div className="text-md font-medium md:ml-4">
+                    - Flaresight
+                    <span className="text-sm md:ml-4 italic">
+                      &lt;/Backend Developer&gt;
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </VerticalTimelineElement>
 
           <VerticalTimelineElement
@@ -172,24 +176,24 @@ const Aboutme = () => {
               Education
             </div>
 
-            <div className="vertical-timeline-element-subtitle pl-5  ">
+            <div className="vertical-timeline-element-subtitle pl-5">
               <div className="flex items-center">
-                <div className="w-20 mt-2">
+                <div className="md:w-20 w-14 mt-2 ">
                   <img
-                    className="h-14"
+                    className="md:h-14 h-12 "
                     src="herald.png"
                     alt="Herald College Logo"
                   />
                 </div>
-                <div>
+                <div className="md:ml-4 ml-1">
                   <div className="mt-4 font-semibold">
                     Herald College Kathmandu (HCK)
                   </div>
-                  <div className="flex-between flex-wrap">
+                  <div className="flex flex-wrap">
                     <span className="text-sm">
                       BSc (Hons) Computer Science (BIT)
                     </span>
-                    <span className="text-sm ml-10">2021 - 2023</span>
+                    <span className="text-sm md:ml-10">2021 - 2023</span>
                   </div>
                 </div>
               </div>
