@@ -7,7 +7,7 @@ import SocialIcons from "./SocialIcons";
 
 const Home = () => {
   return (
-      <div className="min-h-screen flex items-center md:justify-center -mt-32 md:mt-10 "> 
+      <div className="min-h-screen flex items-center md:justify-center mt-0 md:mt-12  "> 
       <div className="grid md:grid-cols-2 grid-rows-1  mx-auto md:gap-40 items-center">
         <div className="grid grid-rows-3 w-96 md:order-1 order-2">
           <div className="text-neutral-300  md:ml-0 md:w-96 ">

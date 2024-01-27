@@ -7,10 +7,10 @@ import { Tooltip } from "react-tooltip";
 
 const Aboutme = () => {
   return (
-    <div className="flex items-center justify-center text-justify h-screen">
+    <div className="flex items-center justify-center text-justify h-screen   ">
       <Tooltip id="my-tooltip" />
 
-      <div className="w-custom">
+      <div className="w-custom  h-screen ">
         <h2 className="flex items-center text-3xl font-bold text-slate-700 mb-8">
           <span className="text-custom-beige2 mr-2 font-semibold text-2xl ">
             01 <span className="text-3xl text-bold">.</span>
