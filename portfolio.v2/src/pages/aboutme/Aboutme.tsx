@@ -7,10 +7,10 @@ import { Tooltip } from "react-tooltip";
 
 const Aboutme = () => {
   return (
-    <div className="flex items-center justify-center text-justify h-screen   ">
+    <div className="flex items-center justify-center text-justify  bg-amber-300  ">
       <Tooltip id="my-tooltip" />
 
-      <div className="w-custom  h-screen ">
+      <div className="w-custom h-full  ">
         <h2 className="flex items-center text-3xl font-bold text-slate-700 mb-8">
           <span className="text-custom-beige2 mr-2 font-semibold text-2xl ">
             01 <span className="text-3xl text-bold">.</span>
@@ -200,12 +200,12 @@ const Aboutme = () => {
             </div>
           </VerticalTimelineElement>
         </VerticalTimeline>
-        <div className="flex justify-center items-center h-full">
+        <div className="flex justify-center items-center">
           <button
             onClick={() => {
               open("Resume.pdf");
             }}
-            className="hover:bg-teal-600 border-2 mt-20 font-bold rounded-md text-slate-700 hover:text-white border-teal-600 active:bg-teal-600 p-4 w-44 "
+            className="hover:bg-teal-600 border-2 font-bold rounded-md text-slate-700 hover:text-white border-teal-600 active:bg-teal-600 p-4 w-44 "
           >
             View my Resume
           </button>
