@@ -24,7 +24,7 @@ const ProjectsItems: React.FC<
             isImageOnLeft ? "col-span-3 order-1  left-0 " : "col-span-3 right-0"
           }  text-slate-600 absolute top-60 transform -translate-y-1/2`}
         >
-          <div className="w-custom1 text-white  bg-teal-800 h-36 rounded-md shadow-md">
+          <div className="md:w-custom1 text-white  bg-teal-800 h-36  w-full rounded-md shadow-md">
             <p className=" text-lg p-5 w-full">{description}</p>
           </div>
           <ul
