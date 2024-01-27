@@ -11,7 +11,11 @@ const Connect = () => {
             Feel free to reach out if you have any questions, ideas, or just
             want to say hello! I'm looking forward to hearing from you.
           </p>
-          <button className="hover:bg-teal-600 border-2 mt-7 rounded-md hover:text-white border-teal-600 active:bg-teal-600 p-3 w-36"link="mailto:tandukarpragyo123@gmail.com">
+          <button 
+           onClick={() => {
+            open("mailto:tandukarpragyo123@gmail.com");
+          }}
+          className="hover:bg-teal-600 border-2 mt-7 rounded-md hover:text-white border-teal-600 active:bg-teal-600 p-3 w-36" >
             Say Hello
           </button>
         </div>
