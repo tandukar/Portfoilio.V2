@@ -85,7 +85,7 @@ const ProjectsItems: React.FC<
               isImageOnLeft
                 ? "col-span-3 order-1 text-left"
                 : "col-span-3 text-right "
-            }   text-3xl font-bold text-slate-700`}
+            }   md:text-3xl text-2xl  font-bold text-slate-700 w-full `}
           >
             {title}
           </div>
