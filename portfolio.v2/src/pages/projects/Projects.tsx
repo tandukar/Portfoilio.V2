@@ -24,7 +24,7 @@ const ProjectsItems: React.FC<
             isImageOnLeft ? "col-span-3 order-1  left-0 " : "col-span-3 right-0"
           }  text-slate-600 absolute top-60 transform -translate-y-1/2`}
         >
-          <div className="md:w-custom1 text-white  bg-teal-800 h-36  w-full rounded-md shadow-md">
+          <div className="md:w-custom1 text-white  bg-teal-800   w-full rounded-md shadow-md">
             <p className=" text-lg p-5 w-full">{description}</p>
           </div>
           <ul
@@ -116,7 +116,7 @@ const Projects = () => {
     },
   ];
   return (
-    <div className="py-16 flex  justify-center h-full bg-slate-500">
+    <div className="py-16 flex  justify-center h-full ">
       <div className=" md:w-custom w-full  h-full ">
         <h2 className=" flex items-center text-3xl font-bold text-slate-700 mb-8">
           <span className="text-custom-beige2 mr-2 font-semibold text-2xl align-middle ">
