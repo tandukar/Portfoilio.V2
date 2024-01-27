@@ -116,8 +116,6 @@ const Projects = () => {
     },
   ];
   return (
-    //might need to change this to slate 50
-    // <div className="py-16 flex  justify-center bg-custom-navy">
     <div className="py-16 flex  justify-center h-full bg-slate-500">
       <div className=" md:w-custom w-full  h-full ">
         <h2 className=" flex items-center text-3xl font-bold text-slate-700 mb-8">
