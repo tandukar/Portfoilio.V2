@@ -48,8 +48,8 @@ const Aboutme = () => {
               <div className="grid md:grid-rows  py-3 mt-3  gap-5">
                 <div className="md:inline-flex font-semibold text-center ">
                   Frontend Stack
-                  <span className="md:border-l-2 mx-2 h-8  border-white ml-4"></span>
-                  <div className="inline-flex gap-4">
+                  <span className="md:border-l-2 mx-2 h-8  border-white ml-4  mb-4"></span>
+                  <div className="inline-flex gap-4 md:mt-0 mt-2">
                     <a
                       data-tooltip-id="my-tooltip"
                       data-tooltip-content="HTML and CSS"
