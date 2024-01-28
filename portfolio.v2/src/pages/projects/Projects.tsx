@@ -18,11 +18,11 @@ const ProjectsItems: React.FC<
 
   return (
     <div>
-      <div className="w-full h-custom grid grid-cols-5  relative ">
+      <div className="w-full h-custom grid grid-cols-5  relative z-10 ">
         <div
           className={`z-50  ${
             isImageOnLeft ? "col-span-3 order-1  left-0 " : "col-span-3 right-0"
-          }  text-slate-600 absolute top-60 transform -translate-y-1/2`}
+          }  text-slate-600 bg-blue-200 absolute top-60 transform -translate-y-1/2`}
         >
           <div className="md:w-custom1 text-white  bg-teal-800   w-full rounded-md shadow-md">
             <p className=" text-lg p-5 w-full">{description}</p>
@@ -117,10 +117,10 @@ const Projects = () => {
   ];
   return (
     <div className="py-16 flex  justify-center h-full ">
-      <div className=" md:w-custom w-full  h-full ">
+      <div className=" md:w-custom w-full  h-full  md:ml-6">
         <h2 className=" flex items-center text-3xl font-bold text-slate-700 mb-8">
           <span className="text-custom-beige2 mr-2 font-semibold text-2xl align-middle ">
-            02 <span className="text-3xl text-bold">.</span>
+            02 <span className=" text-3xl text-bold">.</span>
           </span>
           Some Things I've Built
         </h2>
