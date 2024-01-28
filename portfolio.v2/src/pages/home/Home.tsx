@@ -49,7 +49,7 @@ const Home = () => {
           <img src={"catGif.gif"} alt="Cute Cat" />
         </div>
       </div>
-      <Nav />
+      {/* <Nav /> */}
     </div>
   );
 };
