@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import { FiMail, FiMoon, FiShoppingBag } from "react-icons/fi";
+import { MdOutlinePersonalVideo } from "react-icons/md";
 import { GoHome } from "react-icons/go";
 import Aboutme from "../aboutme/Aboutme";
 import Connect from "../connect/Connect";
@@ -17,7 +18,8 @@ const NavItem: React.FC<NavItemProps> = ({ icon, href, onClick }) => {
   const IconComponent = icon;
 
   return (
-    <div className="hover:bg-slate-200 transition duration-700 ease-in-out rounded-3xl h-11 w-11 flex items-center text-white justify-center hover:text-black">
+    <div
+      className="hover:bg-slate-200 transition duration-700 ease-in-out rounded-3xl h-11 w-11 flex items-center text-white justify-center hover:text-black">
       <a href="#" onClick={onClick}>
         <IconComponent className="h-5 w-5" />
       </a>
@@ -54,9 +56,9 @@ const Portfolio = () => {
             href={""}
           />
           <NavItem
-            icon={FiMail}
-            label="Mail"
-            onClick={() => scrollToSection(connectRef)}
+            icon={MdOutlinePersonalVideo}
+            label="About me"
+            onClick={() => scrollToSection(aboutMeRef)}
             href={""}
           />
           <NavItem
