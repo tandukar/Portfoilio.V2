@@ -88,7 +88,7 @@ const Aboutme = () => {
                 <div className="md:inline-flex font-semibold text-center">
                   Database Stack{" "}
                   <span className="md:border-l-2 mx-2 h-8 border-white ml-4"></span>
-                  <div className="inline-flex gap-4">
+                  <div className="inline-flex gap-4 md:mt-0 mt-2">
                     <img
                       className="h-8 ml-1"
                       src="https://skillicons.dev/icons?i=mysql,sqlite"
