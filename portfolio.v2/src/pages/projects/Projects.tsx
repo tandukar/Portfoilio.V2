@@ -22,7 +22,7 @@ const ProjectsItems: React.FC<
         <div
           className={`z-50  ${
             isImageOnLeft ? "col-span-3 order-1  left-0 " : "col-span-3 right-0"
-          }  text-slate-600 bg-blue-200 rounded-md absolute top-60 transform -translate-y-1/2 space-y-3`}
+          }  text-slate-600  rounded-md absolute top-60 transform -translate-y-1/2 space-y-3`}
         >
           <div className="md:w-custom1 text-white  bg-teal-800   w-full rounded-t-md shadow-md">
             <p className=" text-lg p-5 w-full">{description}</p>
@@ -97,6 +97,14 @@ const ProjectsItems: React.FC<
 
 const Projects = () => {
   const projectItems = [
+    {
+      href: "https://github.com/tandukar/MicroLibraryServices",
+      img: "https://cdn.dribbble.com/userupload/14787405/file/original-6b735c7cbd1fb2f1a74e68c053a1f77f.jpg?resize=1024x768",
+      title: "Micro Library Services",
+      tech: ["Django", "RabbitMQ", "Celery"],
+      description:
+        "A  microservices-based library management application covering authentication, borrowing, book management, and fine management.",
+    },
     {
       href: "https://github.com/tandukar/PatientManagementSystem",
       img: "https://mir-s3-cdn-cf.behance.net/projects/404/0f4e8b185475539.Y3JvcCwxMzI2LDEwMzcsMCw2MjA.png",
