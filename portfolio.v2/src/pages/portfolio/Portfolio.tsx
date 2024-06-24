@@ -11,7 +11,7 @@ type NavItemProps = {
   icon: React.ElementType;
   href: string;
   label: string;
-  onClick: () => void;
+  onClick: (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => void;
 };
 
 const NavItem: React.FC<NavItemProps> = ({ icon, href, onClick }) => {
@@ -40,48 +40,57 @@ const Portfolio = () => {
 
   return (
     <div>
-      {/* <div className="rounded-full bg-black p-1 fixed md:right-5 right-2 h-auto z-50 flex items-center justify-center top-1/2 transform -translate-y-1/2">
-        <div className="mx-auto grid grid-rows-3 gap-5"> */}
-
-        <div className="fixed bottom-2 md:right-5 md:top-1/2 md:h-64 transform md:-translate-y-1/2   md:translate-x-0 -translate-x-1/2 left-1/2 md:left-auto bg-slate-800 md:bg-black p-2 rounded-full z-50 flex md:items-center justify-center md:justify-start">
+      <div className="fixed bottom-2 md:right-5 md:top-1/2 md:h-64 transform md:-translate-y-1/2 md:translate-x-0 -translate-x-1/2 left-1/2 md:left-auto bg-slate-800 md:bg-black p-2 rounded-full z-50 flex md:items-center justify-center md:justify-start">
         <div className="grid grid-cols-4 md:grid-rows-4 md:grid-cols-1 gap-3 md:gap-5">
           <NavItem
             icon={GoHome}
             label="Home"
-            onClick={() => scrollToSection(homeRef)}
-            href={""}
+            onClick={(event) => {
+              event.preventDefault();
+              scrollToSection(homeRef);
+            }}
+            href="#home"
           />
           <NavItem
             icon={FiShoppingBag}
             label="Projects"
-            onClick={() => scrollToSection(projectsRef)}
-            href={""}
+            onClick={(event) => {
+              event.preventDefault();
+              scrollToSection(projectsRef);
+            }}
+            href="#projects"
           />
           <NavItem
             icon={MdOutlinePersonalVideo}
             label="About me"
-            onClick={() => scrollToSection(aboutMeRef)}
-            href={""}
+            onClick={(event) => {
+              event.preventDefault();
+              scrollToSection(aboutMeRef);
+            }}
+            href="#about-me"
           />
           <NavItem
             icon={FiMail}
-            label="mail"
-            onClick={() => console.log("Clicked mail")}
-            href={"mailto:tandukarpragyo123@gmail.com"}
+            label="Mail"
+            onClick={(event) => {
+              event.preventDefault();
+              console.log("Clicked mail");
+            }}
+            href="mailto:tandukarpragyo123@gmail.com"
           />
         </div>
       </div>
       {/* Your components */}
-      <div ref={homeRef}>
+      <div ref={homeRef} id="home">
         <Home />
       </div>
-      <div ref={aboutMeRef}>
+      <div ref={aboutMeRef} id="about-me">
         <Aboutme />
       </div>
-      <div ref={projectsRef}>
+      <div ref={projectsRef} id="projects">
         <Projects />
       </div>
-      <div ref={connectRef}>
+      <div ref={connectRef} id="connect">
         <Connect />
       </div>
     </div>
