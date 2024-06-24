@@ -22,10 +22,10 @@ const ProjectsItems: React.FC<
         <div
           className={`z-50  ${
             isImageOnLeft ? "col-span-3 order-1  left-0 " : "col-span-3 right-0"
-          }  text-slate-600  rounded-md absolute top-60 transform -translate-y-1/2 space-y-3`}
+          }  text-slate-600  rounded-md absolute top-60 transform -translate-y-1/2 space-y-3 mt-2`}
         >
           <div className="md:w-custom1 text-white  bg-teal-800   w-full rounded-t-md shadow-md">
-            <p className=" text-lg p-5 w-full">{description}</p>
+            <p className=" text-lg p-5 w-full ">{description}</p>
           </div>
           <ul
             className={` ${
@@ -68,8 +68,6 @@ const ProjectsItems: React.FC<
               alt=""
             />
           </div>
-
-
         </div>
         <div className="w-full h-full col-span-2 grid-rows-4 py-6 gap-2   ">
           <div
@@ -87,9 +85,9 @@ const ProjectsItems: React.FC<
               isImageOnLeft
                 ? "col-span-3 order-1 text-left"
                 : "col-span-3 text-right "
-            }   md:text-3xl text-2xl  font-bold text-slate-700 w-full `}
+            }   md:text-3xl text-2xl  font-bold text-slate-700 w-full  `}
           >
-            {title}
+            <h2 className="px-2">{title}</h2>
           </div>
         </div>
       </div>
