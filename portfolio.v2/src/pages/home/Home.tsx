@@ -1,7 +1,6 @@
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 import "../navbar/Nav";
-import Nav from "../navbar/Nav";
 import "./SocialIcons";
 import SocialIcons from "./SocialIcons";
 

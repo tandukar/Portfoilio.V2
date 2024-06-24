@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { FiMail, FiMoon, FiShoppingBag } from "react-icons/fi";
+import { FiMail,  FiShoppingBag } from "react-icons/fi";
 import { MdOutlinePersonalVideo } from "react-icons/md";
 import { GoHome } from "react-icons/go";
 import Aboutme from "../aboutme/Aboutme";
