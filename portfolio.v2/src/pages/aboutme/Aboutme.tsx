@@ -8,7 +8,15 @@ import { Tooltip } from "react-tooltip";
 const Aboutme = () => {
   return (
     <div className="flex items-center justify-center text-justify   ">
-      <Tooltip id="my-tooltip" />
+      <Tooltip
+        id="my-tooltip"
+        style={{
+          backgroundColor: "black",
+          color: "white",
+          borderRadius: "20px",
+          zIndex: "5",
+        }}
+      />
 
       <div className="w-custom h-full  ">
         <h2 className="flex items-center text-3xl font-bold text-slate-700 mb-8">
@@ -60,28 +68,49 @@ const Aboutme = () => {
                       ></img>
                     </a>
 
-                    <img
-                      className="h-8 "
-                      src="https://skillicons.dev/icons?i=react,tailwind"
-                    ></img>
-                    <img
-                      className="h-8 "
-                      src="https://skillicons.dev/icons?i=js,ts"
-                    ></img>
+                    <a
+                      data-tooltip-id="my-tooltip"
+                      data-tooltip-content="React and Tailwind CSS"
+                    >
+                      <img
+                        className="h-8 "
+                        src="https://skillicons.dev/icons?i=react,tailwind"
+                      ></img>
+                    </a>
+                    <a
+                      data-tooltip-id="my-tooltip"
+                      data-tooltip-content="JavaScript and TypeScript"
+                    >
+                      <img
+                        className="h-8 "
+                        src="https://skillicons.dev/icons?i=js,ts"
+                      ></img>
+                    </a>
                   </div>
                 </div>
                 <div className="md:inline-flex font-semibold text-center grid-rows-2  mb-4 ">
                   Backend Stack{" "}
                   <span className="md:border-l-2 mx-2 h-8  border-white ml-5"></span>
                   <div className="inline-flex gap-4 md:mt-0 mt-2">
-                    <img
-                      className="h-8 ml-1"
-                      src="https://skillicons.dev/icons?i=nodejs,express"
-                    ></img>
-                    <img
-                      className="h-8 "
-                      src="https://skillicons.dev/icons?i=python,django"
-                    ></img>
+                    <a
+                      data-tooltip-id="my-tooltip"
+                      data-tooltip-content="Node.js and Express.js"
+                    >
+                      <img
+                        className="h-8 ml-1"
+                        src="https://skillicons.dev/icons?i=nodejs,express"
+                      ></img>
+                    </a>
+
+                    <a
+                      data-tooltip-id="my-tooltip"
+                      data-tooltip-content="Python and Django"
+                    >
+                      <img
+                        className="h-8 "
+                        src="https://skillicons.dev/icons?i=python,django"
+                      ></img>
+                    </a>
                   </div>
                 </div>
 
@@ -89,14 +118,25 @@ const Aboutme = () => {
                   Database Stack{" "}
                   <span className="md:border-l-2 mx-2 h-8 border-white ml-4"></span>
                   <div className="inline-flex gap-4 md:mt-0 mt-2 ">
-                    <img
-                      className="h-8 ml-1"
-                      src="https://skillicons.dev/icons?i=mysql,sqlite"
-                    ></img>
-                    <img
-                      className="h-8 "
-                      src="https://skillicons.dev/icons?i=postgresql,mongo"
-                    ></img>
+                    <a
+                      data-tooltip-id="my-tooltip"
+                      data-tooltip-content="MySQL and SQLite"
+                    >
+                      <img
+                        className="h-8 ml-1"
+                        src="https://skillicons.dev/icons?i=mysql,sqlite"
+                      ></img>
+                    </a>
+
+                    <a
+                      data-tooltip-id="my-tooltip"
+                      data-tooltip-content="PostgreSQL and MongoDB"
+                    >
+                      <img
+                        className="h-8 "
+                        src="https://skillicons.dev/icons?i=postgresql,mongo"
+                      ></img>
+                    </a>
                   </div>
                 </div>
               </div>
