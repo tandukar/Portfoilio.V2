@@ -1,3 +1,5 @@
+import "../common/resumeBtn.css";
+
 const Connect = () => {
   return (
     <div className="h-custom1 w-full mt-16">
@@ -15,7 +17,7 @@ const Connect = () => {
            onClick={() => {
             open("mailto:tandukarpragyo123@gmail.com");
           }}
-          className="hover:bg-teal-600 border-2 mt-7 rounded-md hover:text-white border-teal-600 active:bg-teal-600 p-3 w-36" >
+          className="resume-btn border-2 mt-7 rounded-md hover:text-white border-teal-600 active:bg-teal-600 p-3 w-36" >
             Say Hello
           </button>
         </div>
