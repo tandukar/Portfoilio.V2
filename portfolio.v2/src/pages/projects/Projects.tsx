@@ -60,14 +60,16 @@ const ProjectsItems: React.FC<
             isImageOnLeft ? "col-span-3 order-1" : "col-span-3"
           } relative group cursor-pointer`}
         >
-          <div className="relative rounded-md overflow-hidden">
-            <div className="absolute inset-0 bg-custom-beige1 opacity-50 transition-opacity duration-300 group-hover:opacity-0"></div>
+          <div className="relative rounded-md overflow-hidden group">
+            <div className="absolute inset-0 bg-custom-beige1 opacity-50 transition-opacity duration-1000 group-hover:opacity-0"></div>
             <img
-              className={`object-cover w-full h-custom max-h-custom bg-slate-900 rounded-md transition-opacity duration-300 group-hover:opacity-100`}
+              className={`object-cover w-full h-custom max-h-custom bg-slate-900 rounded-md transition-opacity duration-1000 group-hover:opacity-100`}
               src={img}
               alt=""
             />
           </div>
+
+
         </div>
         <div className="w-full h-full col-span-2 grid-rows-4 py-6 gap-2   ">
           <div
@@ -107,7 +109,7 @@ const Projects = () => {
     },
     {
       href: "https://github.com/tandukar/PatientManagementSystem",
-      img: "https://mir-s3-cdn-cf.behance.net/projects/404/0f4e8b185475539.Y3JvcCwxMzI2LDEwMzcsMCw2MjA.png",
+      img: "https://cdn.dribbble.com/users/7496607/screenshots/15855305/media/148b400e76efcfdfd968d2130ce6234a.jpg?resize=800x600&vertical=center",
       title: "Patient Management System",
       tech: ["MERN", "Redux Toolkit", "Tailwind CSS"],
       description:
@@ -115,7 +117,7 @@ const Projects = () => {
     },
     {
       href: "https://github.com/tandukar/Tour",
-      img: "https://i.ytimg.com/vi/J-EFD3hyDFQ/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB7lcRAD87MQKPFVlkNvVd-CSheWA",
+      img: "https://cdn.dribbble.com/userupload/11166770/file/original-a4fbecd3cc9bb782a4f7ede9c0c348cc.jpg?resize=1024x768",
       title: "Tour Management System",
       tech: ["Python", "Django", "HTML", "CSS", "Bootstrap"],
 
