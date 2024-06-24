@@ -18,9 +18,8 @@ const NavItem: React.FC<NavItemProps> = ({ icon, href, onClick }) => {
   const IconComponent = icon;
 
   return (
-    <div
-      className="hover:bg-slate-200 transition duration-700 ease-in-out rounded-3xl md:h-11 w-11 flex items-center text-white justify-center hover:text-black">
-      <a href="#" onClick={onClick}>
+    <div className="hover:bg-slate-200 transition duration-700 ease-in-out rounded-3xl md:h-11 w-11 flex items-center text-white justify-center hover:text-black">
+      <a href={href} onClick={onClick}>
         <IconComponent className="h-5 w-5" />
       </a>
     </div>
@@ -64,8 +63,8 @@ const Portfolio = () => {
           <NavItem
             icon={FiMail}
             label="mail"
-            onClick={() => scrollToSection(aboutMeRef)}
-            href={""}
+            onClick={() => console.log("Clicked mail")}
+            href={"mailto:tandukarpragyo123@gmail.com"}
           />
         </div>
       </div>
