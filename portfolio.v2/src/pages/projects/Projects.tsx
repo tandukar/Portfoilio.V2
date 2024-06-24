@@ -22,9 +22,9 @@ const ProjectsItems: React.FC<
         <div
           className={`z-50  ${
             isImageOnLeft ? "col-span-3 order-1  left-0 " : "col-span-3 right-0"
-          }  text-slate-600 bg-blue-200 absolute top-60 transform -translate-y-1/2`}
+          }  text-slate-600 bg-blue-200 rounded-md absolute top-60 transform -translate-y-1/2`}
         >
-          <div className="md:w-custom1 text-white  bg-teal-800   w-full rounded-md shadow-md">
+          <div className="md:w-custom1 text-white  bg-teal-800   w-full rounded-t-md shadow-md">
             <p className=" text-lg p-5 w-full">{description}</p>
           </div>
           <ul
@@ -36,7 +36,7 @@ const ProjectsItems: React.FC<
           >
             {tech &&
               tech.map((techItem, index) => (
-                <li key={index} className="inline-block ">
+                <li key={index} className="inline-block px-2 ">
                   {techItem}
                 </li>
               ))}
@@ -48,7 +48,7 @@ const ProjectsItems: React.FC<
                 : "col-span-3 text-right"
             } text-2xl font-semibold  mt-4`}
           >
-            <li className="inline-block ">
+            <li className="inline-block px-2">
               <a href={href} target="_blank" rel="noopener noreferrer">
                 <FaGithub />
               </a>
