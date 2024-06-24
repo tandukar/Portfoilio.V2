@@ -62,8 +62,8 @@ const Portfolio = () => {
             href={""}
           />
           <NavItem
-            icon={FiMoon}
-            label="Moon"
+            icon={FiMail}
+            label="mail"
             onClick={() => scrollToSection(aboutMeRef)}
             href={""}
           />
