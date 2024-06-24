@@ -18,11 +18,11 @@ const ProjectsItems: React.FC<
 
   return (
     <div>
-      <div className="w-full h-custom grid grid-cols-5  relative z-10 ">
+      <div className="w-full h-custom grid grid-cols-5  relative z-10  ">
         <div
           className={`z-50  ${
             isImageOnLeft ? "col-span-3 order-1  left-0 " : "col-span-3 right-0"
-          }  text-slate-600 bg-blue-200 rounded-md absolute top-60 transform -translate-y-1/2`}
+          }  text-slate-600 bg-blue-200 rounded-md absolute top-60 transform -translate-y-1/2 space-y-3`}
         >
           <div className="md:w-custom1 text-white  bg-teal-800   w-full rounded-t-md shadow-md">
             <p className=" text-lg p-5 w-full">{description}</p>
