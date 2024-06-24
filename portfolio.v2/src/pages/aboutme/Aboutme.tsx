@@ -4,6 +4,8 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { Tooltip } from "react-tooltip";
+import "../common/resumeBtn.css";
+
 
 const Aboutme = () => {
   return (
@@ -245,7 +247,7 @@ const Aboutme = () => {
             onClick={() => {
               open("Resume.pdf");
             }}
-            className="hover:bg-teal-600 border-2 font-bold rounded-md text-slate-700 hover:text-white border-teal-600 active:bg-teal-600 p-4 w-44 "
+            className="resume-btn border-2 font-bold rounded-md text-slate-700 hover:text-white border-teal-600 active:bg-teal-600 p-4 w-44 "
           >
             View my Resume
           </button>

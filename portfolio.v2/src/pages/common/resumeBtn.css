@@ -1,0 +1,29 @@
+.resume-btn {
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.7s ease-in-out;
+}
+
+.resume-btn::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -2;
+    width: 200px;
+    height: 105px;
+    background-color: rgb(15 118 110);
+    /* Hover color */
+    opacity: 0;
+    border-radius: 50%;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    bottom: -111px;
+    transform-origin: top;
+    left: 50%;
+    transform: translateX(-50%) scale(1);
+}
+
+.resume-btn:hover::before {
+    bottom: -80px;
+    transform: translateX(-50%) translateY(-56px) scale(1);
+    opacity: 1;
+}
