@@ -1,5 +1,6 @@
 import { FaGithub } from "react-icons/fa";
 import patient from "../../assets/images/patient.avif";
+import travel from "../../assets/images/travel.png";
 
 type ProjectsItemsProps = {
   href: string;
@@ -57,14 +58,14 @@ const ProjectsItems: React.FC<
           </ul>
         </div>
         <div
-          className={`object-cover ${
-            isImageOnLeft ? "col-span-3 order-1  ml-10" : "col-span-3 "
+          className={`object-cover bg-white ${
+            isImageOnLeft ? "col-span-3 order-1  ml-10" : "col-span-3  "
           } relative group cursor-pointer`}
         >
           <div className="relative rounded-md overflow-hidden group">
             <div className="absolute inset-0 bg-custom-beige1 opacity-50 transition-opacity duration-1000 group-hover:opacity-0"></div>
             <img
-              className={`object-cover w-full h-custom max-h-custom bg-slate-900 rounded-md transition-opacity duration-1000 group-hover:opacity-100`}
+              className={`object-cover w-full bg-white h-custom max-h-custom  rounded-md transition-opacity duration-1000 group-hover:opacity-100`}
               src={img}
               alt=""
             />
@@ -117,7 +118,8 @@ const Projects = () => {
     },
     {
       href: "https://github.com/tandukar/Tour",
-      img: "https://cdn.dribbble.com/userupload/11166770/file/original-a4fbecd3cc9bb782a4f7ede9c0c348cc.jpg?resize=1024x768",
+      // img: "https://cdn.dribbble.com/userupload/11166770/file/original-a4fbecd3cc9bb782a4f7ede9c0c348cc.jpg?resize=1024x768",
+      img: travel,
       title: "Tour Management System",
       tech: ["Python", "Django", "HTML", "CSS", "Bootstrap"],
 
