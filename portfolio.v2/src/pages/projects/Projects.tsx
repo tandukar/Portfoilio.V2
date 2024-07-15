@@ -1,4 +1,5 @@
 import { FaGithub } from "react-icons/fa";
+import patient from "../../assets/images/patient.avif";
 
 type ProjectsItemsProps = {
   href: string;
@@ -57,7 +58,7 @@ const ProjectsItems: React.FC<
         </div>
         <div
           className={`object-cover ${
-            isImageOnLeft ? "col-span-3 order-1" : "col-span-3"
+            isImageOnLeft ? "col-span-3 order-1  ml-10" : "col-span-3 "
           } relative group cursor-pointer`}
         >
           <div className="relative rounded-md overflow-hidden group">
@@ -107,7 +108,8 @@ const Projects = () => {
     },
     {
       href: "https://github.com/tandukar/PatientManagementSystem",
-      img: "https://cdn.dribbble.com/users/7496607/screenshots/15855305/media/148b400e76efcfdfd968d2130ce6234a.jpg?resize=800x600&vertical=center",
+      img: patient,
+      // img: "https://cdn.dribbble.com/users/7496607/screenshots/15855305/media/148b400e76efcfdfd968d2130ce6234a.jpg?resize=800x600&vertical=center",
       title: "Patient Management System",
       tech: ["MERN", "Redux Toolkit", "Tailwind CSS"],
       description:
