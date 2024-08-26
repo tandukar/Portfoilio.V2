@@ -245,7 +245,7 @@ const Aboutme = () => {
         <div className="flex justify-center items-center">
           <button
             onClick={() => {
-              open("Resume.pdf");
+              open("pragyotandukar_resume.pdf");
             }}
             className="resume-btn border-2 font-bold rounded-md text-slate-700 hover:text-white border-teal-600 active:bg-teal-600 p-4 w-44 "
           >
